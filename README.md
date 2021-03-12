@@ -3,13 +3,11 @@ iOS高级进阶知识汇总
 ## iOS
 
 ### 传递链和响应链
-传递链： 
-响应链：
+
 ### 视频缓存
-AVItem
+
 ### GCD 信号量问题
-let sema = DispatchSemaphore(value: 0) 
-此时信号量为0 任务只能执行一个
+
 #### wait
 
 #### signal
