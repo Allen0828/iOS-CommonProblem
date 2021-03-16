@@ -16,12 +16,16 @@ iOS高级进阶知识汇总
 - 基于cocoapods组件化编程
 
 ## Objective-C
-那些操作会让对象引用计数加1
-block 修改外部变量的原理
+- 那些操作会让对象引用计数加1
+- block 修改外部变量的原理
+- runtime表管理
 
 ## Swift
-?Optional 实现原理
-枚举和OC枚举的区别
+- ?Optional 实现原理
+- 枚举和OC枚举的区别
+- protocol设置关键字
+- struct引用对象后对象是如何赋值的
+- 
 
 ## 扩展知识
 - openGL 着色器
