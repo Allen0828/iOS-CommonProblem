@@ -74,5 +74,8 @@ DEVELOPMENT_TEAM="D5M8CJ9NDR"
 CODE_SIGN_STYLE=Automatic 
 CODE_SIGN_IDENTITY="Apple Development" 
 OMBINE_HIDPI_IMAGES=YES
+```
 
+# 文件夹中多个.a 合并成一个
+libtool -static -o libXXXX.a *.a
 
