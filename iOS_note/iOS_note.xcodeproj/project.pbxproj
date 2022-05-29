@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26756B262843046700F49D1D /* AETestRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26756B252843046700F49D1D /* AETestRotateView.m */; };
 		26797F4B283E0DD4006CCB20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F4A283E0DD4006CCB20 /* AppDelegate.m */; };
 		26797F51283E0DD4006CCB20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F50283E0DD4006CCB20 /* ViewController.m */; };
 		26797F54283E0DD4006CCB20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26797F52283E0DD4006CCB20 /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26756B242843046700F49D1D /* AETestRotateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETestRotateView.h; sourceTree = "<group>"; };
+		26756B252843046700F49D1D /* AETestRotateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETestRotateView.m; sourceTree = "<group>"; };
 		26797F46283E0DD4006CCB20 /* iOS_note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_note.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26797F49283E0DD4006CCB20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26797F4A283E0DD4006CCB20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +96,8 @@
 			children = (
 				26797F67283E257C006CCB20 /* AERotateScreenController.h */,
 				26797F68283E257C006CCB20 /* AERotateScreenController.m */,
+				26756B242843046700F49D1D /* AETestRotateView.h */,
+				26756B252843046700F49D1D /* AETestRotateView.m */,
 			);
 			path = "点击旋转屏幕";
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				26797F69283E257C006CCB20 /* AERotateScreenController.m in Sources */,
 				26797F4B283E0DD4006CCB20 /* AppDelegate.m in Sources */,
 				26797F5C283E0DD6006CCB20 /* main.m in Sources */,
+				26756B262843046700F49D1D /* AETestRotateView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

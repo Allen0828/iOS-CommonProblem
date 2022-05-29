@@ -12,7 +12,7 @@
 @interface AERecordController () <AVAudioRecorderDelegate>
 
 @property (nonatomic,strong) AVAudioRecorder *recorder;
-@property (nonatomic,strong) NSString *name;
+@property (nonatomic,copy) NSString *name;
 
 @end
 

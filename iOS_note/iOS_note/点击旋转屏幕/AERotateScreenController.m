@@ -6,6 +6,7 @@
 //
 
 #import "AERotateScreenController.h"
+#import "AETestRotateView.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeighe [UIScreen mainScreen].bounds.size.heighe
@@ -23,7 +24,7 @@
 @interface AERotateScreenController ()
 
 @property (nonatomic,weak) AEFullScreenController *tmpVC;
-@property (nonatomic,strong) UIView *showView;
+@property (nonatomic,strong) AETestRotateView *showView;
 
 @end
 
@@ -31,8 +32,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.showView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, ScreenWidth, 300)];
-    self.showView.backgroundColor = UIColor.redColor;
+    self.showView = [[AETestRotateView alloc] initWithFrame:CGRectMake(0, 100, ScreenWidth, 300)];
+    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTap)];
     [self.showView addGestureRecognizer:tap];
     
@@ -70,7 +71,7 @@ int a = 0;
 
 - (void)test {
     self.showView.backgroundColor = UIColor.greenColor;
-    self.showView.frame = CGRectMake(0, 100, 222, 222);
+    self.showView.frame = CGRectMake(0, 100, ScreenWidth, 300);
     NSLog(@"%@", self.showView);
     [self.view addSubview:self.showView];
 }
