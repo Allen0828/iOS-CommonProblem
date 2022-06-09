@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		263DC758285183D7006EC85E /* AEImgWatermarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263DC757285183D7006EC85E /* AEImgWatermarkController.m */; };
+		263DC75C285193F7006EC85E /* AEVidoPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263DC75B285193F7006EC85E /* AEVidoPostController.m */; };
+		263DC75E28519479006EC85E /* 111.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 263DC75D28519479006EC85E /* 111.mp3 */; };
+		263DC760285195E2006EC85E /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 263DC75F285195E2006EC85E /* video.mp4 */; };
+		263DC7622851AC80006EC85E /* 002.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 263DC7612851AC80006EC85E /* 002.mp4 */; };
+		263DC7642851C36C006EC85E /* son.gif in Resources */ = {isa = PBXBuildFile; fileRef = 263DC7632851C36C006EC85E /* son.gif */; };
 		26756B262843046700F49D1D /* AETestRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26756B252843046700F49D1D /* AETestRotateView.m */; };
 		26797F4B283E0DD4006CCB20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F4A283E0DD4006CCB20 /* AppDelegate.m */; };
 		26797F51283E0DD4006CCB20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F50283E0DD4006CCB20 /* ViewController.m */; };
@@ -19,6 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		263DC756285183D7006EC85E /* AEImgWatermarkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEImgWatermarkController.h; sourceTree = "<group>"; };
+		263DC757285183D7006EC85E /* AEImgWatermarkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEImgWatermarkController.m; sourceTree = "<group>"; };
+		263DC75A285193F7006EC85E /* AEVidoPostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEVidoPostController.h; sourceTree = "<group>"; };
+		263DC75B285193F7006EC85E /* AEVidoPostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEVidoPostController.m; sourceTree = "<group>"; };
+		263DC75D28519479006EC85E /* 111.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 111.mp3; sourceTree = "<group>"; };
+		263DC75F285195E2006EC85E /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		263DC7612851AC80006EC85E /* 002.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 002.mp4; sourceTree = "<group>"; };
+		263DC7632851C36C006EC85E /* son.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = son.gif; sourceTree = "<group>"; };
 		26756B242843046700F49D1D /* AETestRotateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETestRotateView.h; sourceTree = "<group>"; };
 		26756B252843046700F49D1D /* AETestRotateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETestRotateView.m; sourceTree = "<group>"; };
 		26797F46283E0DD4006CCB20 /* iOS_note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_note.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +62,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		263DC7552851835A006EC85E /* 图片添加水印 */ = {
+			isa = PBXGroup;
+			children = (
+				263DC756285183D7006EC85E /* AEImgWatermarkController.h */,
+				263DC757285183D7006EC85E /* AEImgWatermarkController.m */,
+			);
+			path = "图片添加水印";
+			sourceTree = "<group>";
+		};
+		263DC75928519150006EC85E /* 视频音频合成 */ = {
+			isa = PBXGroup;
+			children = (
+				263DC7632851C36C006EC85E /* son.gif */,
+				263DC7612851AC80006EC85E /* 002.mp4 */,
+				263DC75F285195E2006EC85E /* video.mp4 */,
+				263DC75D28519479006EC85E /* 111.mp3 */,
+				263DC75A285193F7006EC85E /* AEVidoPostController.h */,
+				263DC75B285193F7006EC85E /* AEVidoPostController.m */,
+			);
+			path = "视频音频合成";
+			sourceTree = "<group>";
+		};
 		26797F3D283E0DD4006CCB20 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +103,8 @@
 		26797F48283E0DD4006CCB20 /* iOS_note */ = {
 			isa = PBXGroup;
 			children = (
+				263DC75928519150006EC85E /* 视频音频合成 */,
+				263DC7552851835A006EC85E /* 图片添加水印 */,
 				26797F66283E254B006CCB20 /* 点击旋转屏幕 */,
 				26797F62283E1596006CCB20 /* 录音 */,
 				26797F49283E0DD4006CCB20 /* AppDelegate.h */,
@@ -159,9 +197,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				263DC7622851AC80006EC85E /* 002.mp4 in Resources */,
+				263DC75E28519479006EC85E /* 111.mp3 in Resources */,
+				263DC760285195E2006EC85E /* video.mp4 in Resources */,
 				26797F59283E0DD6006CCB20 /* LaunchScreen.storyboard in Resources */,
 				26797F56283E0DD6006CCB20 /* Assets.xcassets in Resources */,
 				26797F54283E0DD4006CCB20 /* Main.storyboard in Resources */,
+				263DC7642851C36C006EC85E /* son.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +217,9 @@
 				26797F65283E1733006CCB20 /* AERecordController.m in Sources */,
 				26797F51283E0DD4006CCB20 /* ViewController.m in Sources */,
 				26797F69283E257C006CCB20 /* AERotateScreenController.m in Sources */,
+				263DC75C285193F7006EC85E /* AEVidoPostController.m in Sources */,
 				26797F4B283E0DD4006CCB20 /* AppDelegate.m in Sources */,
+				263DC758285183D7006EC85E /* AEImgWatermarkController.m in Sources */,
 				26797F5C283E0DD6006CCB20 /* main.m in Sources */,
 				26756B262843046700F49D1D /* AETestRotateView.m in Sources */,
 			);

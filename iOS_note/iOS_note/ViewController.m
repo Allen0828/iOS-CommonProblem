@@ -8,7 +8,8 @@
 #import "ViewController.h"
 #import "AERecordController.h"
 #import "AERotateScreenController.h"
-
+#import "AEImgWatermarkController.h"
+#import "AEVidoPostController.h"
 
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -23,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _arr = @[@"录音", @"旋转屏幕"];
+    _arr = @[@"录音", @"旋转屏幕", @"图片水印", @"视频音频合成"];
     
     
     UITableView *table = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
@@ -56,6 +57,12 @@
         case 1:
             vc = [AERotateScreenController new];
             break;
+        case 2:
+            vc = [AEImgWatermarkController new];
+        case 3:
+            vc = [AEVidoPostController new];
+            
+            
         default:
             break;
     }
