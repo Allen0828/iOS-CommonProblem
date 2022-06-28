@@ -79,3 +79,7 @@ OMBINE_HIDPI_IMAGES=YES
 # 文件夹中多个.a 合并成一个
 libtool -static -o libXXXX.a *.a
 
+
+## C++ 
+malloc 和 new   单例的两种模式  那种锁的效率高  类的虚继承解决什么问题  虚函数表的实现(子类对象的内存地址怎么排列的)
+
