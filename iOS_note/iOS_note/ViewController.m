@@ -10,6 +10,7 @@
 #import "AERotateScreenController.h"
 #import "AEImgWatermarkController.h"
 #import "AEVidoPostController.h"
+#import "AEDownloadController.h"
 
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -24,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _arr = @[@"录音", @"旋转屏幕", @"图片水印", @"视频音频合成"];
+    _arr = @[@"录音", @"旋转屏幕", @"图片水印", @"视频音频合成", @"点击下载"];
     
     
     UITableView *table = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
@@ -59,15 +60,21 @@
             break;
         case 2:
             vc = [AEImgWatermarkController new];
+            break;
         case 3:
             vc = [AEVidoPostController new];
-            
+            break;
+        case 4:
+            vc = [AEDownloadController new];
+            break;
             
         default:
             break;
     }
     [self.navigationController pushViewController:vc animated:true];
 }
+
+
 
 
 @end

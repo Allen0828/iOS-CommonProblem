@@ -189,7 +189,7 @@
 }
 
 
--(void)addWatermark:(NSURL *)videoPath {
+- (void)addWatermark:(NSURL *)videoPath {
     
     AVMutableComposition *composition = [AVMutableComposition composition];
     AVMutableCompositionTrack *mainVideoTrack = [composition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];

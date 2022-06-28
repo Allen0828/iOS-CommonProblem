@@ -13,6 +13,9 @@
 		263DC760285195E2006EC85E /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 263DC75F285195E2006EC85E /* video.mp4 */; };
 		263DC7622851AC80006EC85E /* 002.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 263DC7612851AC80006EC85E /* 002.mp4 */; };
 		263DC7642851C36C006EC85E /* son.gif in Resources */ = {isa = PBXBuildFile; fileRef = 263DC7632851C36C006EC85E /* son.gif */; };
+		263F51A22869CC5F00ED1430 /* FileDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 263F51A12869CC5F00ED1430 /* FileDownloadManager.m */; };
+		263F51A7286AE3AE00ED1430 /* AEDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263F51A6286AE3AE00ED1430 /* AEDownloadController.m */; };
+		2645512928631EC20047B799 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2645512828631EC20047B799 /* ARKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		26756B262843046700F49D1D /* AETestRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26756B252843046700F49D1D /* AETestRotateView.m */; };
 		26797F4B283E0DD4006CCB20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F4A283E0DD4006CCB20 /* AppDelegate.m */; };
 		26797F51283E0DD4006CCB20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F50283E0DD4006CCB20 /* ViewController.m */; };
@@ -33,6 +36,11 @@
 		263DC75F285195E2006EC85E /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		263DC7612851AC80006EC85E /* 002.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 002.mp4; sourceTree = "<group>"; };
 		263DC7632851C36C006EC85E /* son.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = son.gif; sourceTree = "<group>"; };
+		263F51A02869CC5F00ED1430 /* FileDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileDownloadManager.h; sourceTree = "<group>"; };
+		263F51A12869CC5F00ED1430 /* FileDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileDownloadManager.m; sourceTree = "<group>"; };
+		263F51A5286AE3AE00ED1430 /* AEDownloadController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEDownloadController.h; sourceTree = "<group>"; };
+		263F51A6286AE3AE00ED1430 /* AEDownloadController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEDownloadController.m; sourceTree = "<group>"; };
+		2645512828631EC20047B799 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		26756B242843046700F49D1D /* AETestRotateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AETestRotateView.h; sourceTree = "<group>"; };
 		26756B252843046700F49D1D /* AETestRotateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETestRotateView.m; sourceTree = "<group>"; };
 		26797F46283E0DD4006CCB20 /* iOS_note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_note.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2645512928631EC20047B799 /* ARKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,11 +93,31 @@
 			path = "视频音频合成";
 			sourceTree = "<group>";
 		};
+		263F519F2869CC1700ED1430 /* 原生文件下载 */ = {
+			isa = PBXGroup;
+			children = (
+				263F51A02869CC5F00ED1430 /* FileDownloadManager.h */,
+				263F51A12869CC5F00ED1430 /* FileDownloadManager.m */,
+				263F51A5286AE3AE00ED1430 /* AEDownloadController.h */,
+				263F51A6286AE3AE00ED1430 /* AEDownloadController.m */,
+			);
+			path = "原生文件下载";
+			sourceTree = "<group>";
+		};
+		2645512728631EC10047B799 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2645512828631EC20047B799 /* ARKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		26797F3D283E0DD4006CCB20 = {
 			isa = PBXGroup;
 			children = (
 				26797F48283E0DD4006CCB20 /* iOS_note */,
 				26797F47283E0DD4006CCB20 /* Products */,
+				2645512728631EC10047B799 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +132,7 @@
 		26797F48283E0DD4006CCB20 /* iOS_note */ = {
 			isa = PBXGroup;
 			children = (
+				263F519F2869CC1700ED1430 /* 原生文件下载 */,
 				263DC75928519150006EC85E /* 视频音频合成 */,
 				263DC7552851835A006EC85E /* 图片添加水印 */,
 				26797F66283E254B006CCB20 /* 点击旋转屏幕 */,
@@ -219,9 +249,11 @@
 				26797F69283E257C006CCB20 /* AERotateScreenController.m in Sources */,
 				263DC75C285193F7006EC85E /* AEVidoPostController.m in Sources */,
 				26797F4B283E0DD4006CCB20 /* AppDelegate.m in Sources */,
+				263F51A22869CC5F00ED1430 /* FileDownloadManager.m in Sources */,
 				263DC758285183D7006EC85E /* AEImgWatermarkController.m in Sources */,
 				26797F5C283E0DD6006CCB20 /* main.m in Sources */,
 				26756B262843046700F49D1D /* AETestRotateView.m in Sources */,
+				263F51A7286AE3AE00ED1430 /* AEDownloadController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
