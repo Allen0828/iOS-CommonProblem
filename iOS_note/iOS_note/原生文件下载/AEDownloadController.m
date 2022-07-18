@@ -21,8 +21,11 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
     
-    [self testDownload];
-    
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(50, 300, 250, 35)];
+    btn.backgroundColor = UIColor.redColor;
+    [btn setTitle:@"点击下载" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(testDownload) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
 }
 
 FileDownloadManager *manager;

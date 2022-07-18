@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2614FA312878005300AB5ADE /* AEAudioSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614FA302878005300AB5ADE /* AEAudioSwift.swift */; };
+		2614FA3B28780FFA00AB5ADE /* PCMData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2614FA3A28780FFA00AB5ADE /* PCMData.m */; };
 		263DC758285183D7006EC85E /* AEImgWatermarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263DC757285183D7006EC85E /* AEImgWatermarkController.m */; };
 		263DC75C285193F7006EC85E /* AEVidoPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263DC75B285193F7006EC85E /* AEVidoPostController.m */; };
 		263DC75E28519479006EC85E /* 111.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 263DC75D28519479006EC85E /* 111.mp3 */; };
@@ -25,9 +27,15 @@
 		26797F5C283E0DD6006CCB20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F5B283E0DD6006CCB20 /* main.m */; };
 		26797F65283E1733006CCB20 /* AERecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F64283E1733006CCB20 /* AERecordController.m */; };
 		26797F69283E257C006CCB20 /* AERotateScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F68283E257C006CCB20 /* AERotateScreenController.m */; };
+		2689E27628768117000A83D8 /* AEAudioPCMController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689E27528768117000A83D8 /* AEAudioPCMController.m */; };
+		2689E27828768172000A83D8 /* alove.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 2689E27728768172000A83D8 /* alove.pcm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2614FA2F2878005200AB5ADE /* iOS_note-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS_note-Bridging-Header.h"; sourceTree = "<group>"; };
+		2614FA302878005300AB5ADE /* AEAudioSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEAudioSwift.swift; sourceTree = "<group>"; };
+		2614FA3928780FFA00AB5ADE /* PCMData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCMData.h; sourceTree = "<group>"; };
+		2614FA3A28780FFA00AB5ADE /* PCMData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCMData.m; sourceTree = "<group>"; };
 		263DC756285183D7006EC85E /* AEImgWatermarkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEImgWatermarkController.h; sourceTree = "<group>"; };
 		263DC757285183D7006EC85E /* AEImgWatermarkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEImgWatermarkController.m; sourceTree = "<group>"; };
 		263DC75A285193F7006EC85E /* AEVidoPostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEVidoPostController.h; sourceTree = "<group>"; };
@@ -57,6 +65,9 @@
 		26797F64283E1733006CCB20 /* AERecordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AERecordController.m; sourceTree = "<group>"; };
 		26797F67283E257C006CCB20 /* AERotateScreenController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AERotateScreenController.h; sourceTree = "<group>"; };
 		26797F68283E257C006CCB20 /* AERotateScreenController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AERotateScreenController.m; sourceTree = "<group>"; };
+		2689E27428768117000A83D8 /* AEAudioPCMController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEAudioPCMController.h; sourceTree = "<group>"; };
+		2689E27528768117000A83D8 /* AEAudioPCMController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEAudioPCMController.m; sourceTree = "<group>"; };
+		2689E27728768172000A83D8 /* alove.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = alove.pcm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2614FA3628780FC700AB5ADE /* PlayData */ = {
+			isa = PBXGroup;
+			children = (
+				2614FA3928780FFA00AB5ADE /* PCMData.h */,
+				2614FA3A28780FFA00AB5ADE /* PCMData.m */,
+			);
+			path = PlayData;
+			sourceTree = "<group>";
+		};
 		263DC7552851835A006EC85E /* 图片添加水印 */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +152,7 @@
 		26797F48283E0DD4006CCB20 /* iOS_note */ = {
 			isa = PBXGroup;
 			children = (
+				2689E273287680F0000A83D8 /* 播放PCM */,
 				263F519F2869CC1700ED1430 /* 原生文件下载 */,
 				263DC75928519150006EC85E /* 视频音频合成 */,
 				263DC7552851835A006EC85E /* 图片添加水印 */,
@@ -170,6 +191,19 @@
 			path = "点击旋转屏幕";
 			sourceTree = "<group>";
 		};
+		2689E273287680F0000A83D8 /* 播放PCM */ = {
+			isa = PBXGroup;
+			children = (
+				2614FA3628780FC700AB5ADE /* PlayData */,
+				2689E27728768172000A83D8 /* alove.pcm */,
+				2689E27428768117000A83D8 /* AEAudioPCMController.h */,
+				2689E27528768117000A83D8 /* AEAudioPCMController.m */,
+				2614FA302878005300AB5ADE /* AEAudioSwift.swift */,
+				2614FA2F2878005200AB5ADE /* iOS_note-Bridging-Header.h */,
+			);
+			path = "播放PCM";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,6 +235,7 @@
 				TargetAttributes = {
 					26797F45283E0DD4006CCB20 = {
 						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -233,6 +268,7 @@
 				26797F59283E0DD6006CCB20 /* LaunchScreen.storyboard in Resources */,
 				26797F56283E0DD6006CCB20 /* Assets.xcassets in Resources */,
 				26797F54283E0DD4006CCB20 /* Main.storyboard in Resources */,
+				2689E27828768172000A83D8 /* alove.pcm in Resources */,
 				263DC7642851C36C006EC85E /* son.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,12 +282,15 @@
 			files = (
 				26797F65283E1733006CCB20 /* AERecordController.m in Sources */,
 				26797F51283E0DD4006CCB20 /* ViewController.m in Sources */,
+				2614FA312878005300AB5ADE /* AEAudioSwift.swift in Sources */,
+				2614FA3B28780FFA00AB5ADE /* PCMData.m in Sources */,
 				26797F69283E257C006CCB20 /* AERotateScreenController.m in Sources */,
 				263DC75C285193F7006EC85E /* AEVidoPostController.m in Sources */,
 				26797F4B283E0DD4006CCB20 /* AppDelegate.m in Sources */,
 				263F51A22869CC5F00ED1430 /* FileDownloadManager.m in Sources */,
 				263DC758285183D7006EC85E /* AEImgWatermarkController.m in Sources */,
 				26797F5C283E0DD6006CCB20 /* main.m in Sources */,
+				2689E27628768117000A83D8 /* AEAudioPCMController.m in Sources */,
 				26756B262843046700F49D1D /* AETestRotateView.m in Sources */,
 				263F51A7286AE3AE00ED1430 /* AEDownloadController.m in Sources */,
 			);
@@ -394,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D5M8CJ9NDR;
@@ -413,6 +453,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.allen0828.iOS-note";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS_note/播放PCM/iOS_note-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -422,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D5M8CJ9NDR;
@@ -441,6 +485,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.allen0828.iOS-note";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS_note/播放PCM/iOS_note-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

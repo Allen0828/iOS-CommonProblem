@@ -6,11 +6,18 @@
 //
 
 #import "ViewController.h"
+#import "iOS_note-Swift.h"
+
+
 #import "AERecordController.h"
 #import "AERotateScreenController.h"
 #import "AEImgWatermarkController.h"
 #import "AEVidoPostController.h"
 #import "AEDownloadController.h"
+#import "AEAudioPCMController.h"
+
+
+
 
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -25,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _arr = @[@"录音", @"旋转屏幕", @"图片水印", @"视频音频合成", @"点击下载"];
+    _arr = @[@"录音", @"旋转屏幕", @"图片水印", @"视频音频合成", @"点击下载", @"播放PCM"];
     
     
     UITableView *table = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
@@ -66,6 +73,9 @@
             break;
         case 4:
             vc = [AEDownloadController new];
+            break;
+        case 5:
+            vc = [AEAudioPCMController new];  //[[AEAudioSwift alloc] init]; //
             break;
             
         default:
