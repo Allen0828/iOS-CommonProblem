@@ -27,8 +27,11 @@
 		26797F5C283E0DD6006CCB20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F5B283E0DD6006CCB20 /* main.m */; };
 		26797F65283E1733006CCB20 /* AERecordController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F64283E1733006CCB20 /* AERecordController.m */; };
 		26797F69283E257C006CCB20 /* AERotateScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F68283E257C006CCB20 /* AERotateScreenController.m */; };
+		2680FE6428B8692200B492ED /* LaunchAn.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680FE6328B8692200B492ED /* LaunchAn.m */; };
 		2689E27628768117000A83D8 /* AEAudioPCMController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689E27528768117000A83D8 /* AEAudioPCMController.m */; };
 		2689E27828768172000A83D8 /* alove.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 2689E27728768172000A83D8 /* alove.pcm */; };
+		2692676F288AE61B00B1018E /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692676E288AE61B00B1018E /* Matrix.swift */; };
+		26DD5E18289374AE006C9AA9 /* AEAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DD5E17289374AE006C9AA9 /* AEAnimationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,9 +68,14 @@
 		26797F64283E1733006CCB20 /* AERecordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AERecordController.m; sourceTree = "<group>"; };
 		26797F67283E257C006CCB20 /* AERotateScreenController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AERotateScreenController.h; sourceTree = "<group>"; };
 		26797F68283E257C006CCB20 /* AERotateScreenController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AERotateScreenController.m; sourceTree = "<group>"; };
+		2680FE6228B8692200B492ED /* LaunchAn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchAn.h; sourceTree = "<group>"; };
+		2680FE6328B8692200B492ED /* LaunchAn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchAn.m; sourceTree = "<group>"; };
 		2689E27428768117000A83D8 /* AEAudioPCMController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEAudioPCMController.h; sourceTree = "<group>"; };
 		2689E27528768117000A83D8 /* AEAudioPCMController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEAudioPCMController.m; sourceTree = "<group>"; };
 		2689E27728768172000A83D8 /* alove.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = alove.pcm; sourceTree = "<group>"; };
+		2692676E288AE61B00B1018E /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		26DD5E16289374AE006C9AA9 /* AEAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEAnimationController.h; sourceTree = "<group>"; };
+		26DD5E17289374AE006C9AA9 /* AEAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEAnimationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,8 @@
 		26797F48283E0DD4006CCB20 /* iOS_note */ = {
 			isa = PBXGroup;
 			children = (
+				2680FE6128B868F900B492ED /* 启动动画 */,
+				2692676D288AE5FE00B1018E /* 矩阵计算 */,
 				2689E273287680F0000A83D8 /* 播放PCM */,
 				263F519F2869CC1700ED1430 /* 原生文件下载 */,
 				263DC75928519150006EC85E /* 视频音频合成 */,
@@ -191,6 +201,15 @@
 			path = "点击旋转屏幕";
 			sourceTree = "<group>";
 		};
+		2680FE6128B868F900B492ED /* 启动动画 */ = {
+			isa = PBXGroup;
+			children = (
+				2680FE6228B8692200B492ED /* LaunchAn.h */,
+				2680FE6328B8692200B492ED /* LaunchAn.m */,
+			);
+			path = "启动动画";
+			sourceTree = "<group>";
+		};
 		2689E273287680F0000A83D8 /* 播放PCM */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +221,16 @@
 				2614FA2F2878005200AB5ADE /* iOS_note-Bridging-Header.h */,
 			);
 			path = "播放PCM";
+			sourceTree = "<group>";
+		};
+		2692676D288AE5FE00B1018E /* 矩阵计算 */ = {
+			isa = PBXGroup;
+			children = (
+				2692676E288AE61B00B1018E /* Matrix.swift */,
+				26DD5E16289374AE006C9AA9 /* AEAnimationController.h */,
+				26DD5E17289374AE006C9AA9 /* AEAnimationController.m */,
+			);
+			path = "矩阵计算";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,9 +309,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2692676F288AE61B00B1018E /* Matrix.swift in Sources */,
 				26797F65283E1733006CCB20 /* AERecordController.m in Sources */,
 				26797F51283E0DD4006CCB20 /* ViewController.m in Sources */,
 				2614FA312878005300AB5ADE /* AEAudioSwift.swift in Sources */,
+				26DD5E18289374AE006C9AA9 /* AEAnimationController.m in Sources */,
 				2614FA3B28780FFA00AB5ADE /* PCMData.m in Sources */,
 				26797F69283E257C006CCB20 /* AERotateScreenController.m in Sources */,
 				263DC75C285193F7006EC85E /* AEVidoPostController.m in Sources */,
@@ -293,6 +324,7 @@
 				2689E27628768117000A83D8 /* AEAudioPCMController.m in Sources */,
 				26756B262843046700F49D1D /* AETestRotateView.m in Sources */,
 				263F51A7286AE3AE00ED1430 /* AEDownloadController.m in Sources */,
+				2680FE6428B8692200B492ED /* LaunchAn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +476,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,7 +508,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

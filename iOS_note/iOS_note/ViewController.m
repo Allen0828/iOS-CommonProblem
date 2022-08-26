@@ -15,8 +15,7 @@
 #import "AEVidoPostController.h"
 #import "AEDownloadController.h"
 #import "AEAudioPCMController.h"
-
-
+#import "AEAnimationController.h"
 
 
 
@@ -32,8 +31,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _arr = @[@"录音", @"旋转屏幕", @"图片水印", @"视频音频合成", @"点击下载", @"播放PCM"];
+    _arr = @[@"录音", @"旋转屏幕", @"图片水印", @"视频音频合成", @"点击下载", @"播放PCM", @"旋转动画"];
     
+    [Matrix test];
     
     UITableView *table = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     table.dataSource = self;
@@ -76,6 +76,9 @@
             break;
         case 5:
             vc = [AEAudioPCMController new];  //[[AEAudioSwift alloc] init]; //
+            break;
+        case 6:
+            vc = [AEAnimationController new];
             break;
             
         default:

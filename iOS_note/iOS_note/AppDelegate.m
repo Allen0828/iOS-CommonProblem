@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "LaunchAn.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,8 @@
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
     [self.window makeKeyAndVisible];
     
+    LaunchAn *view = [[LaunchAn alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window addSubview:view];
     
     return YES;
 }
