@@ -13,6 +13,7 @@
 @property (nonatomic,strong) UILabel *originalLabel;
 @property (nonatomic,strong) UILabel *finalLabel;
 @property (nonatomic,strong) UIView *animationView;
+@property (nonatomic,strong) UILabel *tipLabel;
 
 @end
 
@@ -26,7 +27,6 @@
         UIView *animation = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 270, 65)];
         animation.center = self.center;
         [self addSubview:animation];
-        
         
         self.img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo"]];
         self.img.frame = CGRectMake(8, 8, 45, 45);
@@ -50,13 +50,23 @@
         self.finalLabel.textColor = UIColor.whiteColor;
         self.finalLabel.adjustsFontForContentSizeCategory = true;
         [self.animationView addSubview:self.finalLabel];
+        
+        self.tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, frame.size.height-50, frame.size.width, 50)];
+        self.tipLabel.text = @"All Rights Reserved";
+        self.tipLabel.alpha = 0.5;
+        self.tipLabel.textAlignment = NSTextAlignmentCenter;
+        self.tipLabel.textColor = UIColor.whiteColor;
+        self.tipLabel.font = [UIFont systemFontOfSize:12];
+        [self addSubview:self.tipLabel];
+        
         [self animation];
     }
     return self;
 }
 
 - (void)animation {
-    [UIView animateWithDuration:2 animations:^{
+    [UIView animateWithDuration:1 animations:^{
+        self.tipLabel.alpha = 1;
         CGAffineTransform form = CGAffineTransformMakeScale(1.3, 1.3);
         self.originalLabel.transform = form;
         self.animationView.transform = form;
@@ -69,6 +79,7 @@
         
         __block CGFloat animationWidth = 0;
         [UIView animateWithDuration:2 animations:^{
+            
             animationWidth = 250;
             self.animationView.frame = CGRectMake(original.origin.x, original.origin.y, animationWidth, self.animationView.frame.size.height);
         } completion:^(BOOL finished) {
