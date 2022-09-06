@@ -9,7 +9,19 @@
 #import <UIKit/UIKit.h>
 
 
+@interface LaunchAnimation : NSObject
+
++ (void)config;
+
+@end
+
+
+
 @interface LaunchAn : UIView
+
+
+
+
 
 @end
 

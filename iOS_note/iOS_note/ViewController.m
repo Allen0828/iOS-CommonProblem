@@ -31,6 +31,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSString *path = [NSString stringWithFormat:@"%@/Data/FlyAroundData.txt",[NSBundle mainBundle].resourcePath];
+    
+    NSLog(@"%@", path);
+    
+    if (![NSFileManager.defaultManager fileExistsAtPath:path]) {
+        if (![NSFileManager.defaultManager createFileAtPath:path contents:nil attributes:nil]) {
+            NSLog(@"文件创建失败!");
+        } else {
+            NSLog(@"文件创建");
+        }
+    }
+    NSError *error = nil;
+    NSString *originContent = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
+    if (error) {
+        NSLog(@"读取内容失败 %@",error);
+    } else {
+        NSLog(@"读取内容 content -----%@", originContent);
+    }
+    NSString *newContent = [NSString stringWithFormat:@"%@ \n %@", originContent, @"1111"];
+    
+    if (![newContent writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:&error]) {
+        NSLog(@"写入内容失败 %@",error);
+        
+    } else {
+        NSLog(@"写入内容成功 %@",error);
+    }
+    
+    
     _arr = @[@"录音", @"旋转屏幕", @"图片水印", @"视频音频合成", @"点击下载", @"播放PCM", @"旋转动画"];
     
     [Matrix test];

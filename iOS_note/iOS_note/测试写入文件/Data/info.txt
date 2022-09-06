@@ -1,0 +1,5 @@
+sudo spctl --master-disable  
+
+
+
+

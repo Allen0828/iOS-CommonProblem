@@ -25,9 +25,6 @@ import simd
         
         let f = simd_float3(0.5,0.5,1)
         let g = a * f
-        
-        print("22222")
-        
     }
     
     

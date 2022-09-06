@@ -9,7 +9,8 @@
 #import "ViewController.h"
 #import "LaunchAn.h"
 
-@interface AppDelegate ()
+
+@interface AppDelegate () <UISceneDelegate>
 
 @end
 
@@ -18,17 +19,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [LaunchAnimation config];
+
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = UIColor.whiteColor;
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
     [self.window makeKeyAndVisible];
     
-    LaunchAn *view = [[LaunchAn alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.window addSubview:view];
+    
     
     return YES;
 }
-
 
 
 

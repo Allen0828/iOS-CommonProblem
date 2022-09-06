@@ -32,6 +32,7 @@
 		2689E27828768172000A83D8 /* alove.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 2689E27728768172000A83D8 /* alove.pcm */; };
 		2692676F288AE61B00B1018E /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692676E288AE61B00B1018E /* Matrix.swift */; };
 		26DD5E18289374AE006C9AA9 /* AEAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DD5E17289374AE006C9AA9 /* AEAnimationController.m */; };
+		26DF5CB028C76D3800209061 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 26DF5CAF28C76D3800209061 /* Data */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		2692676E288AE61B00B1018E /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		26DD5E16289374AE006C9AA9 /* AEAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEAnimationController.h; sourceTree = "<group>"; };
 		26DD5E17289374AE006C9AA9 /* AEAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEAnimationController.m; sourceTree = "<group>"; };
+		26DF5CAF28C76D3800209061 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		26797F48283E0DD4006CCB20 /* iOS_note */ = {
 			isa = PBXGroup;
 			children = (
+				26DF5CAE28C76CEC00209061 /* 测试写入文件 */,
 				2680FE6128B868F900B492ED /* 启动动画 */,
 				2692676D288AE5FE00B1018E /* 矩阵计算 */,
 				2689E273287680F0000A83D8 /* 播放PCM */,
@@ -233,6 +236,14 @@
 			path = "矩阵计算";
 			sourceTree = "<group>";
 		};
+		26DF5CAE28C76CEC00209061 /* 测试写入文件 */ = {
+			isa = PBXGroup;
+			children = (
+				26DF5CAF28C76D3800209061 /* Data */,
+			);
+			path = "测试写入文件";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -299,6 +310,7 @@
 				26797F54283E0DD4006CCB20 /* Main.storyboard in Resources */,
 				2689E27828768172000A83D8 /* alove.pcm in Resources */,
 				263DC7642851C36C006EC85E /* son.gif in Resources */,
+				26DF5CB028C76D3800209061 /* Data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
