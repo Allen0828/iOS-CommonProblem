@@ -56,6 +56,8 @@
     
 }
 
+
+
 - (void)config {
     self.controlView = [[UIView alloc] init];
     self.controlView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];

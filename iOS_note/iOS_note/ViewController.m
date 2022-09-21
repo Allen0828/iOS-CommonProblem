@@ -16,7 +16,7 @@
 #import "AEDownloadController.h"
 #import "AEAudioPCMController.h"
 #import "AEAnimationController.h"
-
+#import "AELocationController.h"
 
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -30,6 +30,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     
     NSString *path = [NSString stringWithFormat:@"%@/Data/FlyAroundData.txt",[NSBundle mainBundle].resourcePath];
     
@@ -59,7 +60,7 @@
     }
     
     
-    _arr = @[@"录音", @"旋转屏幕", @"图片水印", @"视频音频合成", @"点击下载", @"播放PCM", @"旋转动画"];
+    _arr = @[@"录音", @"旋转屏幕", @"图片水印", @"视频音频合成", @"点击下载", @"播放PCM", @"旋转动画", @"同步获取位置信息"];
     
     [Matrix test];
     
@@ -108,6 +109,8 @@
         case 6:
             vc = [AEAnimationController new];
             break;
+        case 7:
+            vc = [AELocationController new];
             
         default:
             break;

@@ -33,6 +33,8 @@
 		2692676F288AE61B00B1018E /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692676E288AE61B00B1018E /* Matrix.swift */; };
 		26DD5E18289374AE006C9AA9 /* AEAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DD5E17289374AE006C9AA9 /* AEAnimationController.m */; };
 		26DF5CB028C76D3800209061 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 26DF5CAF28C76D3800209061 /* Data */; };
+		26E3F75328DAE26E007A9C12 /* AELocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E3F75228DAE26E007A9C12 /* AELocationController.m */; };
+		26E3F75528DAE4E4007A9C12 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E3F75428DAE4E4007A9C12 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,9 @@
 		26DD5E16289374AE006C9AA9 /* AEAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEAnimationController.h; sourceTree = "<group>"; };
 		26DD5E17289374AE006C9AA9 /* AEAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEAnimationController.m; sourceTree = "<group>"; };
 		26DF5CAF28C76D3800209061 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+		26E3F75128DAE26E007A9C12 /* AELocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AELocationController.h; sourceTree = "<group>"; };
+		26E3F75228DAE26E007A9C12 /* AELocationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AELocationController.m; sourceTree = "<group>"; };
+		26E3F75428DAE4E4007A9C12 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E3F75528DAE4E4007A9C12 /* CoreLocation.framework in Frameworks */,
 				2645512928631EC20047B799 /* ARKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +143,7 @@
 		2645512728631EC10047B799 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26E3F75428DAE4E4007A9C12 /* CoreLocation.framework */,
 				2645512828631EC20047B799 /* ARKit.framework */,
 			);
 			name = Frameworks;
@@ -162,6 +169,7 @@
 		26797F48283E0DD4006CCB20 /* iOS_note */ = {
 			isa = PBXGroup;
 			children = (
+				26E3F75028DAE23B007A9C12 /* 同步获取位置信息 */,
 				26DF5CAE28C76CEC00209061 /* 测试写入文件 */,
 				2680FE6128B868F900B492ED /* 启动动画 */,
 				2692676D288AE5FE00B1018E /* 矩阵计算 */,
@@ -242,6 +250,15 @@
 				26DF5CAF28C76D3800209061 /* Data */,
 			);
 			path = "测试写入文件";
+			sourceTree = "<group>";
+		};
+		26E3F75028DAE23B007A9C12 /* 同步获取位置信息 */ = {
+			isa = PBXGroup;
+			children = (
+				26E3F75128DAE26E007A9C12 /* AELocationController.h */,
+				26E3F75228DAE26E007A9C12 /* AELocationController.m */,
+			);
+			path = "同步获取位置信息";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +347,7 @@
 				26797F69283E257C006CCB20 /* AERotateScreenController.m in Sources */,
 				263DC75C285193F7006EC85E /* AEVidoPostController.m in Sources */,
 				26797F4B283E0DD4006CCB20 /* AppDelegate.m in Sources */,
+				26E3F75328DAE26E007A9C12 /* AELocationController.m in Sources */,
 				263F51A22869CC5F00ED1430 /* FileDownloadManager.m in Sources */,
 				263DC758285183D7006EC85E /* AEImgWatermarkController.m in Sources */,
 				26797F5C283E0DD6006CCB20 /* main.m in Sources */,
