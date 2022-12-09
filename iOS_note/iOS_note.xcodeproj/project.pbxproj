@@ -20,7 +20,7 @@
 		2645512928631EC20047B799 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2645512828631EC20047B799 /* ARKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		26756B262843046700F49D1D /* AETestRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26756B252843046700F49D1D /* AETestRotateView.m */; };
 		26797F4B283E0DD4006CCB20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F4A283E0DD4006CCB20 /* AppDelegate.m */; };
-		26797F51283E0DD4006CCB20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F50283E0DD4006CCB20 /* ViewController.m */; };
+		26797F51283E0DD4006CCB20 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26797F50283E0DD4006CCB20 /* ViewController.mm */; };
 		26797F54283E0DD4006CCB20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26797F52283E0DD4006CCB20 /* Main.storyboard */; };
 		26797F56283E0DD6006CCB20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26797F55283E0DD6006CCB20 /* Assets.xcassets */; };
 		26797F59283E0DD6006CCB20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26797F57283E0DD6006CCB20 /* LaunchScreen.storyboard */; };
@@ -31,10 +31,11 @@
 		2689E27628768117000A83D8 /* AEAudioPCMController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2689E27528768117000A83D8 /* AEAudioPCMController.m */; };
 		2689E27828768172000A83D8 /* alove.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 2689E27728768172000A83D8 /* alove.pcm */; };
 		2692676F288AE61B00B1018E /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692676E288AE61B00B1018E /* Matrix.swift */; };
+		26A735D028F6C06900E75D16 /* AELandscapeRightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A735CF28F6C06900E75D16 /* AELandscapeRightVC.m */; };
 		26DD5E18289374AE006C9AA9 /* AEAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DD5E17289374AE006C9AA9 /* AEAnimationController.m */; };
 		26DF5CB028C76D3800209061 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 26DF5CAF28C76D3800209061 /* Data */; };
 		26E3F75328DAE26E007A9C12 /* AELocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E3F75228DAE26E007A9C12 /* AELocationController.m */; };
-		26E3F75528DAE4E4007A9C12 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E3F75428DAE4E4007A9C12 /* CoreLocation.framework */; };
+		26E3F75528DAE4E4007A9C12 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E3F75428DAE4E4007A9C12 /* CoreLocation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +62,7 @@
 		26797F49283E0DD4006CCB20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26797F4A283E0DD4006CCB20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		26797F4F283E0DD4006CCB20 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		26797F50283E0DD4006CCB20 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		26797F50283E0DD4006CCB20 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		26797F53283E0DD4006CCB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26797F55283E0DD6006CCB20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26797F58283E0DD6006CCB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +78,8 @@
 		2689E27528768117000A83D8 /* AEAudioPCMController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEAudioPCMController.m; sourceTree = "<group>"; };
 		2689E27728768172000A83D8 /* alove.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = alove.pcm; sourceTree = "<group>"; };
 		2692676E288AE61B00B1018E /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		26A735CE28F6C06900E75D16 /* AELandscapeRightVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AELandscapeRightVC.h; sourceTree = "<group>"; };
+		26A735CF28F6C06900E75D16 /* AELandscapeRightVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AELandscapeRightVC.m; sourceTree = "<group>"; };
 		26DD5E16289374AE006C9AA9 /* AEAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEAnimationController.h; sourceTree = "<group>"; };
 		26DD5E17289374AE006C9AA9 /* AEAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEAnimationController.m; sourceTree = "<group>"; };
 		26DF5CAF28C76D3800209061 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
@@ -169,6 +172,7 @@
 		26797F48283E0DD4006CCB20 /* iOS_note */ = {
 			isa = PBXGroup;
 			children = (
+				26A735CD28F6C04400E75D16 /* 进入页面为横屏 */,
 				26E3F75028DAE23B007A9C12 /* 同步获取位置信息 */,
 				26DF5CAE28C76CEC00209061 /* 测试写入文件 */,
 				2680FE6128B868F900B492ED /* 启动动画 */,
@@ -182,7 +186,7 @@
 				26797F49283E0DD4006CCB20 /* AppDelegate.h */,
 				26797F4A283E0DD4006CCB20 /* AppDelegate.m */,
 				26797F4F283E0DD4006CCB20 /* ViewController.h */,
-				26797F50283E0DD4006CCB20 /* ViewController.m */,
+				26797F50283E0DD4006CCB20 /* ViewController.mm */,
 				26797F52283E0DD4006CCB20 /* Main.storyboard */,
 				26797F55283E0DD6006CCB20 /* Assets.xcassets */,
 				26797F57283E0DD6006CCB20 /* LaunchScreen.storyboard */,
@@ -242,6 +246,15 @@
 				26DD5E17289374AE006C9AA9 /* AEAnimationController.m */,
 			);
 			path = "矩阵计算";
+			sourceTree = "<group>";
+		};
+		26A735CD28F6C04400E75D16 /* 进入页面为横屏 */ = {
+			isa = PBXGroup;
+			children = (
+				26A735CE28F6C06900E75D16 /* AELandscapeRightVC.h */,
+				26A735CF28F6C06900E75D16 /* AELandscapeRightVC.m */,
+			);
+			path = "进入页面为横屏";
 			sourceTree = "<group>";
 		};
 		26DF5CAE28C76CEC00209061 /* 测试写入文件 */ = {
@@ -340,7 +353,8 @@
 			files = (
 				2692676F288AE61B00B1018E /* Matrix.swift in Sources */,
 				26797F65283E1733006CCB20 /* AERecordController.m in Sources */,
-				26797F51283E0DD4006CCB20 /* ViewController.m in Sources */,
+				26797F51283E0DD4006CCB20 /* ViewController.mm in Sources */,
+				26A735D028F6C06900E75D16 /* AELandscapeRightVC.m in Sources */,
 				2614FA312878005300AB5ADE /* AEAudioSwift.swift in Sources */,
 				26DD5E18289374AE006C9AA9 /* AEAnimationController.m in Sources */,
 				2614FA3B28780FFA00AB5ADE /* PCMData.m in Sources */,
@@ -501,11 +515,16 @@
 				DEVELOPMENT_TEAM = D5M8CJ9NDR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS_note/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "一直使用定位";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "使用期间定位";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "访问麦克风";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "访问相册";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -533,11 +552,16 @@
 				DEVELOPMENT_TEAM = D5M8CJ9NDR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOS_note/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "一直使用定位";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "使用期间定位";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "访问麦克风";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "访问相册";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

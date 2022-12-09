@@ -17,64 +17,64 @@ LaunchAnimation *la = nil;
 @implementation LaunchAnimation
 
 + (void)config {
-    if (la) {
-        NSLog(@"已经初始化");
-        return;
-    }
-    UIApplication *app = [UIApplication sharedApplication];
-    if (@available(iOS 13.0, *)) {
-        __block UIScene * _Nonnull tmpScene;
-        [[app connectedScenes] enumerateObjectsUsingBlock:^(UIScene * _Nonnull obj, BOOL * _Nonnull stop) {
-            tmpScene = obj;
-            *stop = YES;
-        }];
-        UIWindowScene *winScene = (UIWindowScene *)tmpScene;
-        for (UIWindow *window in winScene.windows) {
-            if (window.isKeyWindow) {
-                NSLog(@" 配置失败");
-                return;
-            }
-        }
-        NSLog(@" 配置成功");
-        la = [LaunchAnimation new];
-    } else {
-        NSLog(@"iOS 12 配置失败");
-    }
+//    if (la) {
+//        NSLog(@"已经初始化");
+//        return;
+//    }
+//    UIApplication *app = [UIApplication sharedApplication];
+//    if (@available(iOS 13.0, *)) {
+//        __block UIScene * _Nonnull tmpScene;
+//        [[app connectedScenes] enumerateObjectsUsingBlock:^(UIScene * _Nonnull obj, BOOL * _Nonnull stop) {
+//            tmpScene = obj;
+//            *stop = YES;
+//        }];
+//        UIWindowScene *winScene = (UIWindowScene *)tmpScene;
+//        for (UIWindow *window in winScene.windows) {
+//            if (window.isKeyWindow) {
+//                NSLog(@" 配置失败");
+//                return;
+//            }
+//        }
+//        NSLog(@" 配置成功");
+//        la = [LaunchAnimation new];
+//    } else {
+//        NSLog(@"iOS 12 配置失败");
+//    }
 }
 
 - (instancetype)init {
     if ([super init]) {
-        if (@available(iOS 13.0, *)) {
-            UIApplication *app = [UIApplication sharedApplication];
-            __block UIScene * _Nonnull tmpScene;
-            [[app connectedScenes] enumerateObjectsUsingBlock:^(UIScene * _Nonnull obj, BOOL * _Nonnull stop) {
-                tmpScene = obj;
-                *stop = YES;
-            }];
-            
-            dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-            dispatch_async(globalQueue, ^{
-                UIWindowScene *winScene = (UIWindowScene *)tmpScene;
-                __block BOOL isWhile = true;
-                while (isWhile) {
-                    dispatch_sync(dispatch_get_main_queue(), ^{
-                        for (UIWindow *window in winScene.windows) {
-                            if (window.isKeyWindow) {
-                                isWhile = false;
-                                LaunchAn *view = [[LaunchAn alloc] initWithFrame:[UIScreen mainScreen].bounds];
-                                [window addSubview:view];
-                                return;
-                            }
-                        }
-                    });
-                }
-            });
-
-            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sceneDidActivateNotification:) name:UISceneDidActivateNotification object:nil];
-            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sceneWillDeactivateNotification:) name:UISceneWillDeactivateNotification object:nil];
-            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sceneWillEnterForegroundNotification:) name:UISceneWillEnterForegroundNotification object:nil];
-            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sceneDidEnterBackgroundNotification:) name:UISceneDidEnterBackgroundNotification object:nil];
-        }
+//        if (@available(iOS 13.0, *)) {
+//            UIApplication *app = [UIApplication sharedApplication];
+//            __block UIScene * _Nonnull tmpScene;
+//            [[app connectedScenes] enumerateObjectsUsingBlock:^(UIScene * _Nonnull obj, BOOL * _Nonnull stop) {
+//                tmpScene = obj;
+//                *stop = YES;
+//            }];
+//            
+//            dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//            dispatch_async(globalQueue, ^{
+//                UIWindowScene *winScene = (UIWindowScene *)tmpScene;
+//                __block BOOL isWhile = true;
+//                while (isWhile) {
+//                    dispatch_sync(dispatch_get_main_queue(), ^{
+//                        for (UIWindow *window in winScene.windows) {
+//                            if (window.isKeyWindow) {
+//                                isWhile = false;
+//                                LaunchAn *view = [[LaunchAn alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//                                [window addSubview:view];
+//                                return;
+//                            }
+//                        }
+//                    });
+//                }
+//            });
+//
+//            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sceneDidActivateNotification:) name:UISceneDidActivateNotification object:nil];
+//            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sceneWillDeactivateNotification:) name:UISceneWillDeactivateNotification object:nil];
+//            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sceneWillEnterForegroundNotification:) name:UISceneWillEnterForegroundNotification object:nil];
+//            [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sceneDidEnterBackgroundNotification:) name:UISceneDidEnterBackgroundNotification object:nil];
+//        }
     }
     return self;
 }

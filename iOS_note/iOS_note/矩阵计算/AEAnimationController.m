@@ -18,13 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = UIColor.whiteColor;
-    self.img = [[UIImageView alloc] initWithFrame:CGRectMake(60, 100, 200, 200)];
-    self.img.image = [UIImage imageNamed:@"pic_front"];
-    
-    [self.view addSubview:self.img];
-    
-    self.mainLoopTimer = [NSTimer scheduledTimerWithTimeInterval:(1.0/20) target:self selector:@selector(mainLoop) userInfo:nil repeats:YES];
+//    self.view.backgroundColor = UIColor.whiteColor;
+//    self.img = [[UIImageView alloc] initWithFrame:CGRectMake(60, 100, 200, 200)];
+//    self.img.image = [UIImage imageNamed:@"pic_front"];
+//    
+//    [self.view addSubview:self.img];
+//    
+//    self.mainLoopTimer = [NSTimer scheduledTimerWithTimeInterval:(1.0/20) target:self selector:@selector(mainLoop) userInfo:nil repeats:YES];
 
 //    [self rotateView: self.img];
 }
@@ -36,7 +36,7 @@ float animation = 0;
     unit = CATransform3DRotate(unit, animation/180*M_PI, 0, 1, 0);
 //    self.img.transform3D = unit;
     
-    self.img.transform3D = [self getMatrix: animation/180*M_PI];
+//    self.img.transform3D = [self getMatrix: animation/180*M_PI];
 
 }
 
