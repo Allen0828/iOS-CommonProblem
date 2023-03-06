@@ -18,7 +18,7 @@
 #import "AEAnimationController.h"
 #import "AELocationController.h"
 #import "AELandscapeRightVC.h"
-
+#import "AEReaderController.h"
 
 inline UIViewController* GetVC() {
     UIViewController *vc = [AELandscapeRightVC new];
@@ -37,25 +37,29 @@ inline UIViewController* GetVC() {
 
 @implementation ViewController
 
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _arr = @[@"录音", @"旋转屏幕", @"图片水印", @"视频音频合成", @"点击下载", @"播放PCM", @"旋转动画", @"同步获取位置信息", @"进入横屏"];
+    _arr = @[@"录音", @"旋转屏幕", @"图片水印", @"视频音频合成", @"点击下载", @"播放PCM", @"旋转动画", @"同步获取位置信息", @"进入横屏", @"阅读小说"];
     
-    self.finalLabel = [[UILabel alloc] initWithFrame:CGRectMake(74, 8, 0, 50)];
-    self.finalLabel.text = @"GritWorld ™";
-    self.finalLabel.font = [UIFont systemFontOfSize:30 weight:UIFontWeightBold];
-    self.finalLabel.textColor = UIColor.blackColor;
-    self.finalLabel.adjustsFontForContentSizeCategory = true;
-    [self.view addSubview:self.finalLabel];
+//    self.finalLabel = [[UILabel alloc] initWithFrame:CGRectMake(74, 8, 0, 50)];
+//    self.finalLabel.text = @"GritWorld ™";
+//    self.finalLabel.font = [UIFont systemFontOfSize:30 weight:UIFontWeightBold];
+//    self.finalLabel.textColor = UIColor.blackColor;
+//    self.finalLabel.adjustsFontForContentSizeCategory = true;
+//    [self.view addSubview:self.finalLabel];
     
-//    UITableView *table = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
-//    table.dataSource = self;
-//    table.delegate = self;
-//    table.rowHeight = 40;
-//    table.tableFooterView = nil;
-//    table.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 1, 50)];
-//    [self.view addSubview:table];
+    UITableView *table = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+    table.dataSource = self;
+    table.delegate = self;
+    table.rowHeight = 40;
+    table.tableFooterView = nil;
+    table.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 1, 50)];
+    [self.view addSubview:table];
     
 //    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"backgroundColor"];
 //    // [NSValue valueWithCGRect:CGRectMake(74, 8, 180, 50)];
@@ -75,9 +79,9 @@ inline UIViewController* GetVC() {
 //    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
 //    [self.finalLabel.layer addAnimation:animation forKey:@"backgroundColorAnimation"];
     
-    [UIView animateWithDuration:2.0 animations:^{
-        self.finalLabel.frame = CGRectMake(74, 8, 180, 50);
-    }];
+//    [UIView animateWithDuration:2.0 animations:^{
+//        self.finalLabel.frame = CGRectMake(74, 8, 180, 50);
+//    }];
     
 }
 
@@ -118,16 +122,21 @@ inline UIViewController* GetVC() {
             break;
         case 7:
             vc = [AELocationController new];
+            break;
         case 8:
         {
             [self presentViewController:GetVC() animated:false completion:nil];
+            return;
 //            vc = GetVC();
         }
+        case 9:
+            vc = [AEReaderController new];
+            break;
         default:
             break;
     }
     
-//    [self.navigationController pushViewController:vc animated:true];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 

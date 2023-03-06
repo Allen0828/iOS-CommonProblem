@@ -19,7 +19,7 @@
 		263F51A7286AE3AE00ED1430 /* AEDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263F51A6286AE3AE00ED1430 /* AEDownloadController.m */; };
 		2645512928631EC20047B799 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2645512828631EC20047B799 /* ARKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		26756B262843046700F49D1D /* AETestRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26756B252843046700F49D1D /* AETestRotateView.m */; };
-		26797F4B283E0DD4006CCB20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26797F4A283E0DD4006CCB20 /* AppDelegate.m */; };
+		26797F4B283E0DD4006CCB20 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26797F4A283E0DD4006CCB20 /* AppDelegate.mm */; };
 		26797F51283E0DD4006CCB20 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26797F50283E0DD4006CCB20 /* ViewController.mm */; };
 		26797F54283E0DD4006CCB20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26797F52283E0DD4006CCB20 /* Main.storyboard */; };
 		26797F56283E0DD6006CCB20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26797F55283E0DD6006CCB20 /* Assets.xcassets */; };
@@ -32,13 +32,74 @@
 		2689E27828768172000A83D8 /* alove.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 2689E27728768172000A83D8 /* alove.pcm */; };
 		2692676F288AE61B00B1018E /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2692676E288AE61B00B1018E /* Matrix.swift */; };
 		26A735D028F6C06900E75D16 /* AELandscapeRightVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A735CF28F6C06900E75D16 /* AELandscapeRightVC.m */; };
+		26C0B178296D2D5400594CD3 /* AEReaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B177296D2D5400594CD3 /* AEReaderController.m */; };
+		26C0B17A296D311F00594CD3 /* 圣经和合本新约.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26C0B179296D311F00594CD3 /* 圣经和合本新约.txt */; };
+		26C0B185296D328700594CD3 /* XPYReadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B17D296D328700594CD3 /* XPYReadHelper.m */; };
+		26C0B186296D328700594CD3 /* XPYReadParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B180296D328700594CD3 /* XPYReadParser.m */; };
+		26C0B187296D328700594CD3 /* XPYReadConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B181296D328700594CD3 /* XPYReadConfigManager.m */; };
+		26C0B188296D328700594CD3 /* XPYChapterHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B183296D328700594CD3 /* XPYChapterHelper.mm */; };
+		26C0B196296D32BF00594CD3 /* XPYChapterModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B18B296D32BF00594CD3 /* XPYChapterModel.mm */; };
+		26C0B197296D32BF00594CD3 /* XPYBookModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B18E296D32BF00594CD3 /* XPYBookModel.mm */; };
+		26C0B198296D32BF00594CD3 /* XPYReadRecordManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B18F296D32BF00594CD3 /* XPYReadRecordManager.mm */; };
+		26C0B199296D32BF00594CD3 /* XPYDatabaseManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B191296D32BF00594CD3 /* XPYDatabaseManager.mm */; };
+		26C0B19A296D32BF00594CD3 /* XPYChapterDataManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B194296D32BF00594CD3 /* XPYChapterDataManager.mm */; };
+		26C0B19E296D32FB00594CD3 /* XPYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B19D296D32FB00594CD3 /* XPYBaseModel.m */; };
+		26C0B1A5296D343E00594CD3 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1A2296D343E00594CD3 /* NSObject+YYModel.m */; };
+		26C0B1A6296D343E00594CD3 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1A3296D343E00594CD3 /* YYClassInfo.m */; };
+		26C0B1AA296D346B00594CD3 /* XPYViewControllerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1A9296D346B00594CD3 /* XPYViewControllerHelper.m */; };
+		26C0B1AF296D356B00594CD3 /* XPYChapterPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1AE296D356B00594CD3 /* XPYChapterPageModel.m */; };
+		26C0B1B2296D357A00594CD3 /* XPYParagraphModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1B1296D357A00594CD3 /* XPYParagraphModel.m */; };
+		26C0B1B6296D35A900594CD3 /* XPYReaderManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1B4296D35A900594CD3 /* XPYReaderManagerController.m */; };
+		26C0B1B9296D35CB00594CD3 /* XPYBaseReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1B7296D35CB00594CD3 /* XPYBaseReadViewController.m */; };
+		26C0B1BC296D35E200594CD3 /* XPYPageReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1BB296D35E200594CD3 /* XPYPageReadViewController.m */; };
+		26C0B1BF296D35FF00594CD3 /* XPYHorizontalScrollReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1BE296D35FF00594CD3 /* XPYHorizontalScrollReadViewController.m */; };
+		26C0B1C2296D367500594CD3 /* XPYReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1C1296D367500594CD3 /* XPYReadViewController.m */; };
+		26C0B1C5296D368400594CD3 /* XPYScrollReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1C3296D368400594CD3 /* XPYScrollReadViewController.m */; };
+		26C0B1C9296D36A800594CD3 /* XPYReadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1C8296D36A800594CD3 /* XPYReadView.m */; };
+		26C0B1D0296D36B800594CD3 /* XPYHorizontalScrollCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1CC296D36B800594CD3 /* XPYHorizontalScrollCollectionViewCell.m */; };
+		26C0B1D1296D36B800594CD3 /* XPYAutoReadCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1CD296D36B800594CD3 /* XPYAutoReadCoverView.m */; };
+		26C0B1D2296D36B800594CD3 /* XPYScrollReadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1CF296D36B800594CD3 /* XPYScrollReadTableViewCell.m */; };
+		26C0B1E3296D37BD00594CD3 /* UIGestureRecognizer+XPYTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1E2296D37BD00594CD3 /* UIGestureRecognizer+XPYTag.m */; };
+		26C0B1F4296D38C800594CD3 /* XPYAutoReadCoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1F3296D38C800594CD3 /* XPYAutoReadCoverViewController.m */; };
+		26C0B1F7296D38E900594CD3 /* XPYBookStackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1F5296D38E800594CD3 /* XPYBookStackViewController.m */; };
+		26C0B1FD296D3A5000594CD3 /* XPYTimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1FB296D3A5000594CD3 /* XPYTimerProxy.m */; };
+		26C0B200296D3AA500594CD3 /* XPYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B1FE296D3AA500594CD3 /* XPYBaseViewController.m */; };
+		26C0B206296D3AE700594CD3 /* XPYBookCatalogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B202296D3AE700594CD3 /* XPYBookCatalogCell.m */; };
+		26C0B207296D3AE700594CD3 /* XPYBookCatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B203296D3AE700594CD3 /* XPYBookCatalogViewController.m */; };
+		26C0B218296D3B0700594CD3 /* XPYReadMenuPageTypeBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B20A296D3B0700594CD3 /* XPYReadMenuPageTypeBar.m */; };
+		26C0B219296D3B0700594CD3 /* XPYReadMenuBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B20B296D3B0700594CD3 /* XPYReadMenuBottomBar.m */; };
+		26C0B21A296D3B0700594CD3 /* XPYReadMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B20C296D3B0700594CD3 /* XPYReadMenu.m */; };
+		26C0B21B296D3B0700594CD3 /* XPYReadMenuTopBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B210296D3B0700594CD3 /* XPYReadMenuTopBar.mm */; };
+		26C0B21C296D3B0700594CD3 /* XPYReadMenuSettingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B212296D3B0700594CD3 /* XPYReadMenuSettingBar.m */; };
+		26C0B21D296D3B0700594CD3 /* XPYReadMenuAutoReadSettingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B215296D3B0700594CD3 /* XPYReadMenuAutoReadSettingBar.m */; };
+		26C0B21E296D3B0700594CD3 /* XPYReadMenuBackgroundBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B216296D3B0700594CD3 /* XPYReadMenuBackgroundBar.m */; };
+		26C0B23D296D3B3A00594CD3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B223296D3B3A00594CD3 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		26C0B23E296D3B3A00594CD3 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B22C296D3B3A00594CD3 /* ViewController+MASAdditions.m */; };
+		26C0B23F296D3B3A00594CD3 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B230296D3B3A00594CD3 /* MASCompositeConstraint.m */; };
+		26C0B240296D3B3A00594CD3 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B231296D3B3A00594CD3 /* MASConstraintMaker.m */; };
+		26C0B241296D3B3A00594CD3 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B232296D3B3A00594CD3 /* MASLayoutConstraint.m */; };
+		26C0B242296D3B3A00594CD3 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B233296D3B3A00594CD3 /* NSArray+MASAdditions.m */; };
+		26C0B243296D3B3A00594CD3 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B234296D3B3A00594CD3 /* View+MASAdditions.m */; };
+		26C0B244296D3B3A00594CD3 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B237296D3B3A00594CD3 /* MASConstraint.m */; };
+		26C0B245296D3B3A00594CD3 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B239296D3B3A00594CD3 /* MASViewConstraint.m */; };
+		26C0B246296D3B3A00594CD3 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B23A296D3B3A00594CD3 /* MASViewAttribute.m */; };
+		26C0B24C296D3BD600594CD3 /* XPYUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B249296D3BD600594CD3 /* XPYUtilities.m */; };
+		26C0B24F296D3CB000594CD3 /* XPYUploadBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B24D296D3CB000594CD3 /* XPYUploadBookViewController.m */; };
+		26C0B252296D413800594CD3 /* XPYBookStackCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B251296D413800594CD3 /* XPYBookStackCollectionViewCell.m */; };
+		26C0B25A296D415600594CD3 /* XPYCloseBookAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B254296D415600594CD3 /* XPYCloseBookAnimation.m */; };
+		26C0B25B296D415600594CD3 /* XPYTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B256296D415600594CD3 /* XPYTransitionManager.m */; };
+		26C0B25C296D415600594CD3 /* XPYOpenBookAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B258296D415600594CD3 /* XPYOpenBookAnimation.m */; };
+		26C0B5DD296EA4DD00594CD3 /* AECursorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0B5DC296EA4DD00594CD3 /* AECursorView.m */; };
+		26C0B5DF2971548F00594CD3 /* 圣经和合本.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26C0B5DE2971548F00594CD3 /* 圣经和合本.txt */; };
 		26DD5E18289374AE006C9AA9 /* AEAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DD5E17289374AE006C9AA9 /* AEAnimationController.m */; };
 		26DF5CB028C76D3800209061 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 26DF5CAF28C76D3800209061 /* Data */; };
 		26E3F75328DAE26E007A9C12 /* AELocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E3F75228DAE26E007A9C12 /* AELocationController.m */; };
 		26E3F75528DAE4E4007A9C12 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E3F75428DAE4E4007A9C12 /* CoreLocation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A7B7DDF46CB16553D663E7B6 /* Pods_iOS_note.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192C0EA81ABE0F153B563CA2 /* Pods_iOS_note.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		192C0EA81ABE0F153B563CA2 /* Pods_iOS_note.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_note.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2614FA2F2878005200AB5ADE /* iOS_note-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS_note-Bridging-Header.h"; sourceTree = "<group>"; };
 		2614FA302878005300AB5ADE /* AEAudioSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEAudioSwift.swift; sourceTree = "<group>"; };
 		2614FA3928780FFA00AB5ADE /* PCMData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCMData.h; sourceTree = "<group>"; };
@@ -60,7 +121,7 @@
 		26756B252843046700F49D1D /* AETestRotateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AETestRotateView.m; sourceTree = "<group>"; };
 		26797F46283E0DD4006CCB20 /* iOS_note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_note.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26797F49283E0DD4006CCB20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		26797F4A283E0DD4006CCB20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		26797F4A283E0DD4006CCB20 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		26797F4F283E0DD4006CCB20 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		26797F50283E0DD4006CCB20 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		26797F53283E0DD4006CCB20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,12 +141,141 @@
 		2692676E288AE61B00B1018E /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		26A735CE28F6C06900E75D16 /* AELandscapeRightVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AELandscapeRightVC.h; sourceTree = "<group>"; };
 		26A735CF28F6C06900E75D16 /* AELandscapeRightVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AELandscapeRightVC.m; sourceTree = "<group>"; };
+		26C0B176296D2D5400594CD3 /* AEReaderController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEReaderController.h; sourceTree = "<group>"; };
+		26C0B177296D2D5400594CD3 /* AEReaderController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEReaderController.m; sourceTree = "<group>"; };
+		26C0B179296D311F00594CD3 /* 圣经和合本新约.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "圣经和合本新约.txt"; sourceTree = "<group>"; };
+		26C0B17C296D328700594CD3 /* XPYReadConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadConfigManager.h; sourceTree = "<group>"; };
+		26C0B17D296D328700594CD3 /* XPYReadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYReadHelper.m; sourceTree = "<group>"; };
+		26C0B17E296D328700594CD3 /* XPYChapterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYChapterHelper.h; sourceTree = "<group>"; };
+		26C0B17F296D328700594CD3 /* XPYReadConfigDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadConfigDefines.h; sourceTree = "<group>"; };
+		26C0B180296D328700594CD3 /* XPYReadParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYReadParser.m; sourceTree = "<group>"; };
+		26C0B181296D328700594CD3 /* XPYReadConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYReadConfigManager.m; sourceTree = "<group>"; };
+		26C0B182296D328700594CD3 /* XPYReadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadHelper.h; sourceTree = "<group>"; };
+		26C0B183296D328700594CD3 /* XPYChapterHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XPYChapterHelper.mm; sourceTree = "<group>"; };
+		26C0B184296D328700594CD3 /* XPYReadParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadParser.h; sourceTree = "<group>"; };
+		26C0B18A296D32BF00594CD3 /* XPYChapterModel+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPYChapterModel+WCTTableCoding.h"; sourceTree = "<group>"; };
+		26C0B18B296D32BF00594CD3 /* XPYChapterModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XPYChapterModel.mm; sourceTree = "<group>"; };
+		26C0B18C296D32BF00594CD3 /* XPYReadRecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadRecordManager.h; sourceTree = "<group>"; };
+		26C0B18D296D32BF00594CD3 /* XPYChapterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYChapterModel.h; sourceTree = "<group>"; };
+		26C0B18E296D32BF00594CD3 /* XPYBookModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XPYBookModel.mm; sourceTree = "<group>"; };
+		26C0B18F296D32BF00594CD3 /* XPYReadRecordManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XPYReadRecordManager.mm; sourceTree = "<group>"; };
+		26C0B190296D32BF00594CD3 /* XPYBookModel+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XPYBookModel+WCTTableCoding.h"; sourceTree = "<group>"; };
+		26C0B191296D32BF00594CD3 /* XPYDatabaseManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XPYDatabaseManager.mm; sourceTree = "<group>"; };
+		26C0B192296D32BF00594CD3 /* XPYChapterDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYChapterDataManager.h; sourceTree = "<group>"; };
+		26C0B193296D32BF00594CD3 /* XPYDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYDatabaseManager.h; sourceTree = "<group>"; };
+		26C0B194296D32BF00594CD3 /* XPYChapterDataManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XPYChapterDataManager.mm; sourceTree = "<group>"; };
+		26C0B195296D32BF00594CD3 /* XPYBookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYBookModel.h; sourceTree = "<group>"; };
+		26C0B19C296D32FB00594CD3 /* XPYBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYBaseModel.h; sourceTree = "<group>"; };
+		26C0B19D296D32FB00594CD3 /* XPYBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYBaseModel.m; sourceTree = "<group>"; };
+		26C0B1A0296D343E00594CD3 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		26C0B1A1296D343E00594CD3 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		26C0B1A2296D343E00594CD3 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		26C0B1A3296D343E00594CD3 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		26C0B1A4296D343E00594CD3 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		26C0B1A8296D346B00594CD3 /* XPYViewControllerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYViewControllerHelper.h; sourceTree = "<group>"; };
+		26C0B1A9296D346B00594CD3 /* XPYViewControllerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYViewControllerHelper.m; sourceTree = "<group>"; };
+		26C0B1AB296D352000594CD3 /* ReaderHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderHeader.h; sourceTree = "<group>"; };
+		26C0B1AD296D356B00594CD3 /* XPYChapterPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYChapterPageModel.h; sourceTree = "<group>"; };
+		26C0B1AE296D356B00594CD3 /* XPYChapterPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYChapterPageModel.m; sourceTree = "<group>"; };
+		26C0B1B0296D357A00594CD3 /* XPYParagraphModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYParagraphModel.h; sourceTree = "<group>"; };
+		26C0B1B1296D357A00594CD3 /* XPYParagraphModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYParagraphModel.m; sourceTree = "<group>"; };
+		26C0B1B4296D35A900594CD3 /* XPYReaderManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYReaderManagerController.m; sourceTree = "<group>"; };
+		26C0B1B5296D35A900594CD3 /* XPYReaderManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReaderManagerController.h; sourceTree = "<group>"; };
+		26C0B1B7296D35CB00594CD3 /* XPYBaseReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYBaseReadViewController.m; sourceTree = "<group>"; };
+		26C0B1B8296D35CB00594CD3 /* XPYBaseReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYBaseReadViewController.h; sourceTree = "<group>"; };
+		26C0B1BA296D35E200594CD3 /* XPYPageReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYPageReadViewController.h; sourceTree = "<group>"; };
+		26C0B1BB296D35E200594CD3 /* XPYPageReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYPageReadViewController.m; sourceTree = "<group>"; };
+		26C0B1BD296D35FF00594CD3 /* XPYHorizontalScrollReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYHorizontalScrollReadViewController.h; sourceTree = "<group>"; };
+		26C0B1BE296D35FF00594CD3 /* XPYHorizontalScrollReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYHorizontalScrollReadViewController.m; sourceTree = "<group>"; };
+		26C0B1C0296D367400594CD3 /* XPYReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadViewController.h; sourceTree = "<group>"; };
+		26C0B1C1296D367500594CD3 /* XPYReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYReadViewController.m; sourceTree = "<group>"; };
+		26C0B1C3296D368400594CD3 /* XPYScrollReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYScrollReadViewController.m; sourceTree = "<group>"; };
+		26C0B1C4296D368400594CD3 /* XPYScrollReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYScrollReadViewController.h; sourceTree = "<group>"; };
+		26C0B1C7296D36A800594CD3 /* XPYReadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadView.h; sourceTree = "<group>"; };
+		26C0B1C8296D36A800594CD3 /* XPYReadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYReadView.m; sourceTree = "<group>"; };
+		26C0B1CA296D36B800594CD3 /* XPYAutoReadCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYAutoReadCoverView.h; sourceTree = "<group>"; };
+		26C0B1CB296D36B800594CD3 /* XPYHorizontalScrollCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYHorizontalScrollCollectionViewCell.h; sourceTree = "<group>"; };
+		26C0B1CC296D36B800594CD3 /* XPYHorizontalScrollCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYHorizontalScrollCollectionViewCell.m; sourceTree = "<group>"; };
+		26C0B1CD296D36B800594CD3 /* XPYAutoReadCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYAutoReadCoverView.m; sourceTree = "<group>"; };
+		26C0B1CE296D36B800594CD3 /* XPYScrollReadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYScrollReadTableViewCell.h; sourceTree = "<group>"; };
+		26C0B1CF296D36B800594CD3 /* XPYScrollReadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYScrollReadTableViewCell.m; sourceTree = "<group>"; };
+		26C0B1E1296D37BD00594CD3 /* UIGestureRecognizer+XPYTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+XPYTag.h"; sourceTree = "<group>"; };
+		26C0B1E2296D37BD00594CD3 /* UIGestureRecognizer+XPYTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+XPYTag.m"; sourceTree = "<group>"; };
+		26C0B1F2296D38C800594CD3 /* XPYAutoReadCoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYAutoReadCoverViewController.h; sourceTree = "<group>"; };
+		26C0B1F3296D38C800594CD3 /* XPYAutoReadCoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYAutoReadCoverViewController.m; sourceTree = "<group>"; };
+		26C0B1F5296D38E800594CD3 /* XPYBookStackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYBookStackViewController.m; sourceTree = "<group>"; };
+		26C0B1F6296D38E800594CD3 /* XPYBookStackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYBookStackViewController.h; sourceTree = "<group>"; };
+		26C0B1FB296D3A5000594CD3 /* XPYTimerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYTimerProxy.m; sourceTree = "<group>"; };
+		26C0B1FC296D3A5000594CD3 /* XPYTimerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYTimerProxy.h; sourceTree = "<group>"; };
+		26C0B1FE296D3AA500594CD3 /* XPYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYBaseViewController.m; sourceTree = "<group>"; };
+		26C0B1FF296D3AA500594CD3 /* XPYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYBaseViewController.h; sourceTree = "<group>"; };
+		26C0B202296D3AE700594CD3 /* XPYBookCatalogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYBookCatalogCell.m; sourceTree = "<group>"; };
+		26C0B203296D3AE700594CD3 /* XPYBookCatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYBookCatalogViewController.m; sourceTree = "<group>"; };
+		26C0B204296D3AE700594CD3 /* XPYBookCatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYBookCatalogViewController.h; sourceTree = "<group>"; };
+		26C0B205296D3AE700594CD3 /* XPYBookCatalogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYBookCatalogCell.h; sourceTree = "<group>"; };
+		26C0B20A296D3B0700594CD3 /* XPYReadMenuPageTypeBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYReadMenuPageTypeBar.m; sourceTree = "<group>"; };
+		26C0B20B296D3B0700594CD3 /* XPYReadMenuBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYReadMenuBottomBar.m; sourceTree = "<group>"; };
+		26C0B20C296D3B0700594CD3 /* XPYReadMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYReadMenu.m; sourceTree = "<group>"; };
+		26C0B20D296D3B0700594CD3 /* XPYReadMenuSettingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadMenuSettingBar.h; sourceTree = "<group>"; };
+		26C0B20E296D3B0700594CD3 /* XPYReadMenuAutoReadSettingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadMenuAutoReadSettingBar.h; sourceTree = "<group>"; };
+		26C0B20F296D3B0700594CD3 /* XPYReadMenuBackgroundBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadMenuBackgroundBar.h; sourceTree = "<group>"; };
+		26C0B210296D3B0700594CD3 /* XPYReadMenuTopBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = XPYReadMenuTopBar.mm; sourceTree = "<group>"; };
+		26C0B211296D3B0700594CD3 /* XPYReadMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadMenu.h; sourceTree = "<group>"; };
+		26C0B212296D3B0700594CD3 /* XPYReadMenuSettingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYReadMenuSettingBar.m; sourceTree = "<group>"; };
+		26C0B213296D3B0700594CD3 /* XPYReadMenuBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadMenuBottomBar.h; sourceTree = "<group>"; };
+		26C0B214296D3B0700594CD3 /* XPYReadMenuPageTypeBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadMenuPageTypeBar.h; sourceTree = "<group>"; };
+		26C0B215296D3B0700594CD3 /* XPYReadMenuAutoReadSettingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYReadMenuAutoReadSettingBar.m; sourceTree = "<group>"; };
+		26C0B216296D3B0700594CD3 /* XPYReadMenuBackgroundBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYReadMenuBackgroundBar.m; sourceTree = "<group>"; };
+		26C0B217296D3B0700594CD3 /* XPYReadMenuTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYReadMenuTopBar.h; sourceTree = "<group>"; };
+		26C0B222296D3B3A00594CD3 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		26C0B223296D3B3A00594CD3 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		26C0B224296D3B3A00594CD3 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		26C0B225296D3B3A00594CD3 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		26C0B226296D3B3A00594CD3 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		26C0B227296D3B3A00594CD3 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		26C0B228296D3B3A00594CD3 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		26C0B229296D3B3A00594CD3 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		26C0B22A296D3B3A00594CD3 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		26C0B22B296D3B3A00594CD3 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		26C0B22C296D3B3A00594CD3 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		26C0B22D296D3B3A00594CD3 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		26C0B22E296D3B3A00594CD3 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		26C0B22F296D3B3A00594CD3 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		26C0B230296D3B3A00594CD3 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		26C0B231296D3B3A00594CD3 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		26C0B232296D3B3A00594CD3 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		26C0B233296D3B3A00594CD3 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		26C0B234296D3B3A00594CD3 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		26C0B235296D3B3A00594CD3 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		26C0B236296D3B3A00594CD3 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		26C0B237296D3B3A00594CD3 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		26C0B238296D3B3A00594CD3 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		26C0B239296D3B3A00594CD3 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		26C0B23A296D3B3A00594CD3 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		26C0B249296D3BD600594CD3 /* XPYUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYUtilities.m; sourceTree = "<group>"; };
+		26C0B24A296D3BD600594CD3 /* XPYUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYUtilities.h; sourceTree = "<group>"; };
+		26C0B24B296D3BD600594CD3 /* XPYUtilitiesDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYUtilitiesDefine.h; sourceTree = "<group>"; };
+		26C0B24D296D3CB000594CD3 /* XPYUploadBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYUploadBookViewController.m; sourceTree = "<group>"; };
+		26C0B24E296D3CB000594CD3 /* XPYUploadBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYUploadBookViewController.h; sourceTree = "<group>"; };
+		26C0B250296D413800594CD3 /* XPYBookStackCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYBookStackCollectionViewCell.h; sourceTree = "<group>"; };
+		26C0B251296D413800594CD3 /* XPYBookStackCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYBookStackCollectionViewCell.m; sourceTree = "<group>"; };
+		26C0B254296D415600594CD3 /* XPYCloseBookAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYCloseBookAnimation.m; sourceTree = "<group>"; };
+		26C0B255296D415600594CD3 /* XPYOpenBookAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYOpenBookAnimation.h; sourceTree = "<group>"; };
+		26C0B256296D415600594CD3 /* XPYTransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYTransitionManager.m; sourceTree = "<group>"; };
+		26C0B257296D415600594CD3 /* XPYCloseBookAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYCloseBookAnimation.h; sourceTree = "<group>"; };
+		26C0B258296D415600594CD3 /* XPYOpenBookAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPYOpenBookAnimation.m; sourceTree = "<group>"; };
+		26C0B259296D415600594CD3 /* XPYTransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPYTransitionManager.h; sourceTree = "<group>"; };
+		26C0B5DB296EA4DD00594CD3 /* AECursorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AECursorView.h; sourceTree = "<group>"; };
+		26C0B5DC296EA4DD00594CD3 /* AECursorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AECursorView.m; sourceTree = "<group>"; };
+		26C0B5DE2971548F00594CD3 /* 圣经和合本.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "圣经和合本.txt"; sourceTree = "<group>"; };
 		26DD5E16289374AE006C9AA9 /* AEAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEAnimationController.h; sourceTree = "<group>"; };
 		26DD5E17289374AE006C9AA9 /* AEAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEAnimationController.m; sourceTree = "<group>"; };
 		26DF5CAF28C76D3800209061 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		26E3F75128DAE26E007A9C12 /* AELocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AELocationController.h; sourceTree = "<group>"; };
 		26E3F75228DAE26E007A9C12 /* AELocationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AELocationController.m; sourceTree = "<group>"; };
 		26E3F75428DAE4E4007A9C12 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		80FD645D23385C263932DCC4 /* Pods-iOS_note.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_note.release.xcconfig"; path = "Target Support Files/Pods-iOS_note/Pods-iOS_note.release.xcconfig"; sourceTree = "<group>"; };
+		824B5EBDA161EEC40076374C /* Pods-iOS_note.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_note.debug.xcconfig"; path = "Target Support Files/Pods-iOS_note/Pods-iOS_note.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,12 +285,22 @@
 			files = (
 				26E3F75528DAE4E4007A9C12 /* CoreLocation.framework in Frameworks */,
 				2645512928631EC20047B799 /* ARKit.framework in Frameworks */,
+				A7B7DDF46CB16553D663E7B6 /* Pods_iOS_note.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		029F4EA02412F5DEECC913E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				824B5EBDA161EEC40076374C /* Pods-iOS_note.debug.xcconfig */,
+				80FD645D23385C263932DCC4 /* Pods-iOS_note.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2614FA3628780FC700AB5ADE /* PlayData */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +348,7 @@
 			children = (
 				26E3F75428DAE4E4007A9C12 /* CoreLocation.framework */,
 				2645512828631EC20047B799 /* ARKit.framework */,
+				192C0EA81ABE0F153B563CA2 /* Pods_iOS_note.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,6 +359,7 @@
 				26797F48283E0DD4006CCB20 /* iOS_note */,
 				26797F47283E0DD4006CCB20 /* Products */,
 				2645512728631EC10047B799 /* Frameworks */,
+				029F4EA02412F5DEECC913E7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,6 +374,7 @@
 		26797F48283E0DD4006CCB20 /* iOS_note */ = {
 			isa = PBXGroup;
 			children = (
+				26C0B175296D2D2C00594CD3 /* 阅读小说 */,
 				26A735CD28F6C04400E75D16 /* 进入页面为横屏 */,
 				26E3F75028DAE23B007A9C12 /* 同步获取位置信息 */,
 				26DF5CAE28C76CEC00209061 /* 测试写入文件 */,
@@ -184,7 +387,7 @@
 				26797F66283E254B006CCB20 /* 点击旋转屏幕 */,
 				26797F62283E1596006CCB20 /* 录音 */,
 				26797F49283E0DD4006CCB20 /* AppDelegate.h */,
-				26797F4A283E0DD4006CCB20 /* AppDelegate.m */,
+				26797F4A283E0DD4006CCB20 /* AppDelegate.mm */,
 				26797F4F283E0DD4006CCB20 /* ViewController.h */,
 				26797F50283E0DD4006CCB20 /* ViewController.mm */,
 				26797F52283E0DD4006CCB20 /* Main.storyboard */,
@@ -257,6 +460,260 @@
 			path = "进入页面为横屏";
 			sourceTree = "<group>";
 		};
+		26C0B175296D2D2C00594CD3 /* 阅读小说 */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B1E1296D37BD00594CD3 /* UIGestureRecognizer+XPYTag.h */,
+				26C0B1E2296D37BD00594CD3 /* UIGestureRecognizer+XPYTag.m */,
+				26C0B253296D415600594CD3 /* TransitionManager */,
+				26C0B248296D3BD600594CD3 /* Utility */,
+				26C0B21F296D3B3A00594CD3 /* Masonry */,
+				26C0B208296D3B0700594CD3 /* ReadMenu */,
+				26C0B201296D3AE700594CD3 /* BookCatalog */,
+				26C0B1C6296D36A000594CD3 /* View */,
+				26C0B1B3296D359B00594CD3 /* Controller */,
+				26C0B1AC296D356100594CD3 /* Chapter */,
+				26C0B1A7296D346B00594CD3 /* Helper */,
+				26C0B19F296D343E00594CD3 /* YYModel */,
+				26C0B19B296D32FB00594CD3 /* Base */,
+				26C0B189296D32BF00594CD3 /* Database */,
+				26C0B17B296D328700594CD3 /* ReadHelper */,
+				26C0B179296D311F00594CD3 /* 圣经和合本新约.txt */,
+				26C0B5DE2971548F00594CD3 /* 圣经和合本.txt */,
+				26C0B176296D2D5400594CD3 /* AEReaderController.h */,
+				26C0B177296D2D5400594CD3 /* AEReaderController.m */,
+				26C0B1AB296D352000594CD3 /* ReaderHeader.h */,
+				26C0B5DB296EA4DD00594CD3 /* AECursorView.h */,
+				26C0B5DC296EA4DD00594CD3 /* AECursorView.m */,
+			);
+			path = "阅读小说";
+			sourceTree = "<group>";
+		};
+		26C0B17B296D328700594CD3 /* ReadHelper */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B17C296D328700594CD3 /* XPYReadConfigManager.h */,
+				26C0B17D296D328700594CD3 /* XPYReadHelper.m */,
+				26C0B17E296D328700594CD3 /* XPYChapterHelper.h */,
+				26C0B17F296D328700594CD3 /* XPYReadConfigDefines.h */,
+				26C0B180296D328700594CD3 /* XPYReadParser.m */,
+				26C0B181296D328700594CD3 /* XPYReadConfigManager.m */,
+				26C0B182296D328700594CD3 /* XPYReadHelper.h */,
+				26C0B183296D328700594CD3 /* XPYChapterHelper.mm */,
+				26C0B184296D328700594CD3 /* XPYReadParser.h */,
+			);
+			path = ReadHelper;
+			sourceTree = "<group>";
+		};
+		26C0B189296D32BF00594CD3 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B18A296D32BF00594CD3 /* XPYChapterModel+WCTTableCoding.h */,
+				26C0B18B296D32BF00594CD3 /* XPYChapterModel.mm */,
+				26C0B18C296D32BF00594CD3 /* XPYReadRecordManager.h */,
+				26C0B18D296D32BF00594CD3 /* XPYChapterModel.h */,
+				26C0B18E296D32BF00594CD3 /* XPYBookModel.mm */,
+				26C0B18F296D32BF00594CD3 /* XPYReadRecordManager.mm */,
+				26C0B190296D32BF00594CD3 /* XPYBookModel+WCTTableCoding.h */,
+				26C0B191296D32BF00594CD3 /* XPYDatabaseManager.mm */,
+				26C0B192296D32BF00594CD3 /* XPYChapterDataManager.h */,
+				26C0B193296D32BF00594CD3 /* XPYDatabaseManager.h */,
+				26C0B194296D32BF00594CD3 /* XPYChapterDataManager.mm */,
+				26C0B195296D32BF00594CD3 /* XPYBookModel.h */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		26C0B19B296D32FB00594CD3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B19C296D32FB00594CD3 /* XPYBaseModel.h */,
+				26C0B19D296D32FB00594CD3 /* XPYBaseModel.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		26C0B19F296D343E00594CD3 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B1A0296D343E00594CD3 /* YYClassInfo.h */,
+				26C0B1A1296D343E00594CD3 /* YYModel.h */,
+				26C0B1A2296D343E00594CD3 /* NSObject+YYModel.m */,
+				26C0B1A3296D343E00594CD3 /* YYClassInfo.m */,
+				26C0B1A4296D343E00594CD3 /* NSObject+YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		26C0B1A7296D346B00594CD3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B1FC296D3A5000594CD3 /* XPYTimerProxy.h */,
+				26C0B1FB296D3A5000594CD3 /* XPYTimerProxy.m */,
+				26C0B1A8296D346B00594CD3 /* XPYViewControllerHelper.h */,
+				26C0B1A9296D346B00594CD3 /* XPYViewControllerHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		26C0B1AC296D356100594CD3 /* Chapter */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B1B0296D357A00594CD3 /* XPYParagraphModel.h */,
+				26C0B1B1296D357A00594CD3 /* XPYParagraphModel.m */,
+				26C0B1AD296D356B00594CD3 /* XPYChapterPageModel.h */,
+				26C0B1AE296D356B00594CD3 /* XPYChapterPageModel.m */,
+			);
+			path = Chapter;
+			sourceTree = "<group>";
+		};
+		26C0B1B3296D359B00594CD3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B24E296D3CB000594CD3 /* XPYUploadBookViewController.h */,
+				26C0B24D296D3CB000594CD3 /* XPYUploadBookViewController.m */,
+				26C0B1FF296D3AA500594CD3 /* XPYBaseViewController.h */,
+				26C0B1FE296D3AA500594CD3 /* XPYBaseViewController.m */,
+				26C0B1F6296D38E800594CD3 /* XPYBookStackViewController.h */,
+				26C0B1F5296D38E800594CD3 /* XPYBookStackViewController.m */,
+				26C0B1F2296D38C800594CD3 /* XPYAutoReadCoverViewController.h */,
+				26C0B1F3296D38C800594CD3 /* XPYAutoReadCoverViewController.m */,
+				26C0B1C4296D368400594CD3 /* XPYScrollReadViewController.h */,
+				26C0B1C3296D368400594CD3 /* XPYScrollReadViewController.m */,
+				26C0B1C0296D367400594CD3 /* XPYReadViewController.h */,
+				26C0B1C1296D367500594CD3 /* XPYReadViewController.m */,
+				26C0B1BD296D35FF00594CD3 /* XPYHorizontalScrollReadViewController.h */,
+				26C0B1BE296D35FF00594CD3 /* XPYHorizontalScrollReadViewController.m */,
+				26C0B1BA296D35E200594CD3 /* XPYPageReadViewController.h */,
+				26C0B1BB296D35E200594CD3 /* XPYPageReadViewController.m */,
+				26C0B1B8296D35CB00594CD3 /* XPYBaseReadViewController.h */,
+				26C0B1B7296D35CB00594CD3 /* XPYBaseReadViewController.m */,
+				26C0B1B5296D35A900594CD3 /* XPYReaderManagerController.h */,
+				26C0B1B4296D35A900594CD3 /* XPYReaderManagerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		26C0B1C6296D36A000594CD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B250296D413800594CD3 /* XPYBookStackCollectionViewCell.h */,
+				26C0B251296D413800594CD3 /* XPYBookStackCollectionViewCell.m */,
+				26C0B1CA296D36B800594CD3 /* XPYAutoReadCoverView.h */,
+				26C0B1CD296D36B800594CD3 /* XPYAutoReadCoverView.m */,
+				26C0B1CB296D36B800594CD3 /* XPYHorizontalScrollCollectionViewCell.h */,
+				26C0B1CC296D36B800594CD3 /* XPYHorizontalScrollCollectionViewCell.m */,
+				26C0B1CE296D36B800594CD3 /* XPYScrollReadTableViewCell.h */,
+				26C0B1CF296D36B800594CD3 /* XPYScrollReadTableViewCell.m */,
+				26C0B1C7296D36A800594CD3 /* XPYReadView.h */,
+				26C0B1C8296D36A800594CD3 /* XPYReadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		26C0B201296D3AE700594CD3 /* BookCatalog */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B204296D3AE700594CD3 /* XPYBookCatalogViewController.h */,
+				26C0B203296D3AE700594CD3 /* XPYBookCatalogViewController.m */,
+				26C0B205296D3AE700594CD3 /* XPYBookCatalogCell.h */,
+				26C0B202296D3AE700594CD3 /* XPYBookCatalogCell.m */,
+			);
+			path = BookCatalog;
+			sourceTree = "<group>";
+		};
+		26C0B208296D3B0700594CD3 /* ReadMenu */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B209296D3B0700594CD3 /* View */,
+			);
+			path = ReadMenu;
+			sourceTree = "<group>";
+		};
+		26C0B209296D3B0700594CD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B20A296D3B0700594CD3 /* XPYReadMenuPageTypeBar.m */,
+				26C0B20B296D3B0700594CD3 /* XPYReadMenuBottomBar.m */,
+				26C0B20C296D3B0700594CD3 /* XPYReadMenu.m */,
+				26C0B20D296D3B0700594CD3 /* XPYReadMenuSettingBar.h */,
+				26C0B20E296D3B0700594CD3 /* XPYReadMenuAutoReadSettingBar.h */,
+				26C0B20F296D3B0700594CD3 /* XPYReadMenuBackgroundBar.h */,
+				26C0B210296D3B0700594CD3 /* XPYReadMenuTopBar.mm */,
+				26C0B211296D3B0700594CD3 /* XPYReadMenu.h */,
+				26C0B212296D3B0700594CD3 /* XPYReadMenuSettingBar.m */,
+				26C0B213296D3B0700594CD3 /* XPYReadMenuBottomBar.h */,
+				26C0B214296D3B0700594CD3 /* XPYReadMenuPageTypeBar.h */,
+				26C0B215296D3B0700594CD3 /* XPYReadMenuAutoReadSettingBar.m */,
+				26C0B216296D3B0700594CD3 /* XPYReadMenuBackgroundBar.m */,
+				26C0B217296D3B0700594CD3 /* XPYReadMenuTopBar.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		26C0B21F296D3B3A00594CD3 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B221296D3B3A00594CD3 /* Masonry */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		26C0B221296D3B3A00594CD3 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B222296D3B3A00594CD3 /* MASCompositeConstraint.h */,
+				26C0B223296D3B3A00594CD3 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				26C0B224296D3B3A00594CD3 /* MASConstraint+Private.h */,
+				26C0B225296D3B3A00594CD3 /* MASLayoutConstraint.h */,
+				26C0B226296D3B3A00594CD3 /* NSArray+MASShorthandAdditions.h */,
+				26C0B227296D3B3A00594CD3 /* MASConstraintMaker.h */,
+				26C0B228296D3B3A00594CD3 /* View+MASAdditions.h */,
+				26C0B229296D3B3A00594CD3 /* NSArray+MASAdditions.h */,
+				26C0B22A296D3B3A00594CD3 /* MASUtilities.h */,
+				26C0B22B296D3B3A00594CD3 /* MASViewAttribute.h */,
+				26C0B22C296D3B3A00594CD3 /* ViewController+MASAdditions.m */,
+				26C0B22D296D3B3A00594CD3 /* MASViewConstraint.h */,
+				26C0B22E296D3B3A00594CD3 /* MASConstraint.h */,
+				26C0B22F296D3B3A00594CD3 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				26C0B230296D3B3A00594CD3 /* MASCompositeConstraint.m */,
+				26C0B231296D3B3A00594CD3 /* MASConstraintMaker.m */,
+				26C0B232296D3B3A00594CD3 /* MASLayoutConstraint.m */,
+				26C0B233296D3B3A00594CD3 /* NSArray+MASAdditions.m */,
+				26C0B234296D3B3A00594CD3 /* View+MASAdditions.m */,
+				26C0B235296D3B3A00594CD3 /* View+MASShorthandAdditions.h */,
+				26C0B236296D3B3A00594CD3 /* Masonry.h */,
+				26C0B237296D3B3A00594CD3 /* MASConstraint.m */,
+				26C0B238296D3B3A00594CD3 /* ViewController+MASAdditions.h */,
+				26C0B239296D3B3A00594CD3 /* MASViewConstraint.m */,
+				26C0B23A296D3B3A00594CD3 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		26C0B248296D3BD600594CD3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B249296D3BD600594CD3 /* XPYUtilities.m */,
+				26C0B24A296D3BD600594CD3 /* XPYUtilities.h */,
+				26C0B24B296D3BD600594CD3 /* XPYUtilitiesDefine.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		26C0B253296D415600594CD3 /* TransitionManager */ = {
+			isa = PBXGroup;
+			children = (
+				26C0B254296D415600594CD3 /* XPYCloseBookAnimation.m */,
+				26C0B255296D415600594CD3 /* XPYOpenBookAnimation.h */,
+				26C0B256296D415600594CD3 /* XPYTransitionManager.m */,
+				26C0B257296D415600594CD3 /* XPYCloseBookAnimation.h */,
+				26C0B258296D415600594CD3 /* XPYOpenBookAnimation.m */,
+				26C0B259296D415600594CD3 /* XPYTransitionManager.h */,
+			);
+			path = TransitionManager;
+			sourceTree = "<group>";
+		};
 		26DF5CAE28C76CEC00209061 /* 测试写入文件 */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,9 +738,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26797F5F283E0DD6006CCB20 /* Build configuration list for PBXNativeTarget "iOS_note" */;
 			buildPhases = (
+				8C4C288A2C357760BCE21307 /* [CP] Check Pods Manifest.lock */,
 				26797F42283E0DD4006CCB20 /* Sources */,
 				26797F43283E0DD4006CCB20 /* Frameworks */,
 				26797F44283E0DD4006CCB20 /* Resources */,
+				921FBB54EAD7D82CDF1DEDDD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,7 +792,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				263DC7622851AC80006EC85E /* 002.mp4 in Resources */,
+				26C0B17A296D311F00594CD3 /* 圣经和合本新约.txt in Resources */,
 				263DC75E28519479006EC85E /* 111.mp3 in Resources */,
+				26C0B5DF2971548F00594CD3 /* 圣经和合本.txt in Resources */,
 				263DC760285195E2006EC85E /* video.mp4 in Resources */,
 				26797F59283E0DD6006CCB20 /* LaunchScreen.storyboard in Resources */,
 				26797F56283E0DD6006CCB20 /* Assets.xcassets in Resources */,
@@ -346,28 +807,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8C4C288A2C357760BCE21307 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS_note-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		921FBB54EAD7D82CDF1DEDDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_note/Pods-iOS_note-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_note/Pods-iOS_note-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS_note/Pods-iOS_note-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		26797F42283E0DD4006CCB20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2692676F288AE61B00B1018E /* Matrix.swift in Sources */,
+				26C0B218296D3B0700594CD3 /* XPYReadMenuPageTypeBar.m in Sources */,
+				26C0B1AF296D356B00594CD3 /* XPYChapterPageModel.m in Sources */,
+				26C0B197296D32BF00594CD3 /* XPYBookModel.mm in Sources */,
+				26C0B1C9296D36A800594CD3 /* XPYReadView.m in Sources */,
+				26C0B1C5296D368400594CD3 /* XPYScrollReadViewController.m in Sources */,
+				26C0B21E296D3B0700594CD3 /* XPYReadMenuBackgroundBar.m in Sources */,
+				26C0B23D296D3B3A00594CD3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				26C0B243296D3B3A00594CD3 /* View+MASAdditions.m in Sources */,
 				26797F65283E1733006CCB20 /* AERecordController.m in Sources */,
 				26797F51283E0DD4006CCB20 /* ViewController.mm in Sources */,
+				26C0B25C296D415600594CD3 /* XPYOpenBookAnimation.m in Sources */,
+				26C0B1B6296D35A900594CD3 /* XPYReaderManagerController.m in Sources */,
 				26A735D028F6C06900E75D16 /* AELandscapeRightVC.m in Sources */,
+				26C0B199296D32BF00594CD3 /* XPYDatabaseManager.mm in Sources */,
 				2614FA312878005300AB5ADE /* AEAudioSwift.swift in Sources */,
+				26C0B1C2296D367500594CD3 /* XPYReadViewController.m in Sources */,
 				26DD5E18289374AE006C9AA9 /* AEAnimationController.m in Sources */,
 				2614FA3B28780FFA00AB5ADE /* PCMData.m in Sources */,
+				26C0B1BC296D35E200594CD3 /* XPYPageReadViewController.m in Sources */,
+				26C0B187296D328700594CD3 /* XPYReadConfigManager.m in Sources */,
+				26C0B240296D3B3A00594CD3 /* MASConstraintMaker.m in Sources */,
+				26C0B246296D3B3A00594CD3 /* MASViewAttribute.m in Sources */,
+				26C0B1F7296D38E900594CD3 /* XPYBookStackViewController.m in Sources */,
+				26C0B21A296D3B0700594CD3 /* XPYReadMenu.m in Sources */,
+				26C0B219296D3B0700594CD3 /* XPYReadMenuBottomBar.m in Sources */,
+				26C0B207296D3AE700594CD3 /* XPYBookCatalogViewController.m in Sources */,
+				26C0B178296D2D5400594CD3 /* AEReaderController.m in Sources */,
 				26797F69283E257C006CCB20 /* AERotateScreenController.m in Sources */,
+				26C0B1D2296D36B800594CD3 /* XPYScrollReadTableViewCell.m in Sources */,
+				26C0B23E296D3B3A00594CD3 /* ViewController+MASAdditions.m in Sources */,
+				26C0B21B296D3B0700594CD3 /* XPYReadMenuTopBar.mm in Sources */,
+				26C0B1BF296D35FF00594CD3 /* XPYHorizontalScrollReadViewController.m in Sources */,
+				26C0B1D0296D36B800594CD3 /* XPYHorizontalScrollCollectionViewCell.m in Sources */,
+				26C0B1D1296D36B800594CD3 /* XPYAutoReadCoverView.m in Sources */,
+				26C0B186296D328700594CD3 /* XPYReadParser.m in Sources */,
+				26C0B25B296D415600594CD3 /* XPYTransitionManager.m in Sources */,
 				263DC75C285193F7006EC85E /* AEVidoPostController.m in Sources */,
-				26797F4B283E0DD4006CCB20 /* AppDelegate.m in Sources */,
+				26C0B23F296D3B3A00594CD3 /* MASCompositeConstraint.m in Sources */,
+				26C0B252296D413800594CD3 /* XPYBookStackCollectionViewCell.m in Sources */,
+				26797F4B283E0DD4006CCB20 /* AppDelegate.mm in Sources */,
+				26C0B21C296D3B0700594CD3 /* XPYReadMenuSettingBar.m in Sources */,
+				26C0B244296D3B3A00594CD3 /* MASConstraint.m in Sources */,
+				26C0B1A6296D343E00594CD3 /* YYClassInfo.m in Sources */,
 				26E3F75328DAE26E007A9C12 /* AELocationController.m in Sources */,
+				26C0B206296D3AE700594CD3 /* XPYBookCatalogCell.m in Sources */,
 				263F51A22869CC5F00ED1430 /* FileDownloadManager.m in Sources */,
+				26C0B1F4296D38C800594CD3 /* XPYAutoReadCoverViewController.m in Sources */,
+				26C0B19A296D32BF00594CD3 /* XPYChapterDataManager.mm in Sources */,
+				26C0B1B9296D35CB00594CD3 /* XPYBaseReadViewController.m in Sources */,
+				26C0B198296D32BF00594CD3 /* XPYReadRecordManager.mm in Sources */,
+				26C0B1AA296D346B00594CD3 /* XPYViewControllerHelper.m in Sources */,
+				26C0B24C296D3BD600594CD3 /* XPYUtilities.m in Sources */,
+				26C0B1E3296D37BD00594CD3 /* UIGestureRecognizer+XPYTag.m in Sources */,
+				26C0B188296D328700594CD3 /* XPYChapterHelper.mm in Sources */,
 				263DC758285183D7006EC85E /* AEImgWatermarkController.m in Sources */,
+				26C0B1A5296D343E00594CD3 /* NSObject+YYModel.m in Sources */,
+				26C0B245296D3B3A00594CD3 /* MASViewConstraint.m in Sources */,
 				26797F5C283E0DD6006CCB20 /* main.m in Sources */,
+				26C0B1B2296D357A00594CD3 /* XPYParagraphModel.m in Sources */,
+				26C0B241296D3B3A00594CD3 /* MASLayoutConstraint.m in Sources */,
+				26C0B185296D328700594CD3 /* XPYReadHelper.m in Sources */,
+				26C0B200296D3AA500594CD3 /* XPYBaseViewController.m in Sources */,
+				26C0B196296D32BF00594CD3 /* XPYChapterModel.mm in Sources */,
+				26C0B5DD296EA4DD00594CD3 /* AECursorView.m in Sources */,
 				2689E27628768117000A83D8 /* AEAudioPCMController.m in Sources */,
+				26C0B21D296D3B0700594CD3 /* XPYReadMenuAutoReadSettingBar.m in Sources */,
 				26756B262843046700F49D1D /* AETestRotateView.m in Sources */,
+				26C0B24F296D3CB000594CD3 /* XPYUploadBookViewController.m in Sources */,
 				263F51A7286AE3AE00ED1430 /* AEDownloadController.m in Sources */,
+				26C0B242296D3B3A00594CD3 /* NSArray+MASAdditions.m in Sources */,
+				26C0B25A296D415600594CD3 /* XPYCloseBookAnimation.m in Sources */,
+				26C0B19E296D32FB00594CD3 /* XPYBaseModel.m in Sources */,
+				26C0B1FD296D3A5000594CD3 /* XPYTimerProxy.m in Sources */,
 				2680FE6428B8692200B492ED /* LaunchAn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +1066,7 @@
 		};
 		26797F60283E0DD6006CCB20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 824B5EBDA161EEC40076374C /* Pods-iOS_note.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -523,8 +1084,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,6 +1103,7 @@
 		};
 		26797F61283E0DD6006CCB20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FD645D23385C263932DCC4 /* Pods-iOS_note.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -560,8 +1121,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

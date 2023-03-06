@@ -166,16 +166,17 @@ static bool EngineFinishRotate = false;
 //    }
 //    else
 //    {
-        if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
-            SEL selector = NSSelectorFromString(@"setOrientation:");
-            NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[UIDevice instanceMethodSignatureForSelector:selector]];
-            [invocation setSelector:selector];
-            [invocation setTarget:[UIDevice currentDevice]];
-            UIInterfaceOrientation val = UIInterfaceOrientationLandscapeRight;
-            [invocation setArgument:&val atIndex:2];
-            [invocation invoke];
-        }
-        [UIViewController attemptRotationToDeviceOrientation];
+    [self dismissViewControllerAnimated:true completion:nil];
+//        if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+//            SEL selector = NSSelectorFromString(@"setOrientation:");
+//            NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[UIDevice instanceMethodSignatureForSelector:selector]];
+//            [invocation setSelector:selector];
+//            [invocation setTarget:[UIDevice currentDevice]];
+//            UIInterfaceOrientation val = UIInterfaceOrientationLandscapeRight;
+//            [invocation setArgument:&val atIndex:2];
+//            [invocation invoke];
+//        }
+//        [UIViewController attemptRotationToDeviceOrientation];
 //    }
 }
 
