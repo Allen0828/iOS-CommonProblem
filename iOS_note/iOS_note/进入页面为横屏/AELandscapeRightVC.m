@@ -82,7 +82,7 @@ static bool EngineFinishRotate = false;
 // present view controller
 - (BOOL)shouldAutorotate {
     NSLog(@"vc-shouldAutorotate");
-    return true;
+    return false;
 }
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     NSLog(@"vc-supportedInterfaceOrientations");

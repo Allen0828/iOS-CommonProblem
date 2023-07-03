@@ -18,7 +18,7 @@
 #import "AEAnimationController.h"
 #import "AELocationController.h"
 #import "AELandscapeRightVC.h"
-#import "AEReaderController.h"
+//#import "AEReaderController.h"
 
 inline UIViewController* GetVC() {
     UIViewController *vc = [AELandscapeRightVC new];
@@ -130,7 +130,7 @@ inline UIViewController* GetVC() {
 //            vc = GetVC();
         }
         case 9:
-            vc = [AEReaderController new];
+//            vc = [AEReaderController new];
             break;
         default:
             break;
