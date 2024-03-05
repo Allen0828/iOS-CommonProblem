@@ -12,7 +12,20 @@ iOS 工作/学习/面试中遇到的问题和测试代码汇总
   aotoreleasePool
 }
 - UIView和UILayer区别
+  </br><div>
+   每个 UIView 内部都有一个 CALayer 在背后提供内容的绘制和显示，并且 UIView 的尺寸样式都由内部的 Layer 所提供。两者都有树状层级结构，layer 内部有 SubLayers，View 内部有 SubViews.但是 Layer 比 View 多了个AnchorPoint</br>
+   在 View显示的时候，UIView 做为 Layer 的CALayerDelegate,View 的显示内容取决于内部的 CALayer 的 display</br>
+   CALayer 是默认修改属性支持隐式动画的，在给 UIView 的 Layer 做动画的时候，View 作为 Layer 的代理，Layer 通过 actionForLayer:forKey:向 View请求相应的action(动画行为)</br>
+   layer 内部维护着三分layer tree,分别是 presentLayer Tree(动画树),modeLayer Tree(模型树), Render Tree (渲染树),在做 iOS动画的时候，我们修改动画的属性，在动画的其实是 Layer 的 presentLayer的属性值,而最终展示在界面上的其实是提供 View的modelLayer
+   两者最明显的区别是 View可以接受并处理事件，而 Layer 不可以</br>
+  </div>
+  
 - NSArray和NSSet区别
+  </br><div>
+  NSArray有序的集合，存储的元素在一个整块的内存中并按序排列，存储数据的方式是连续的，后一个数据在内存中是紧接着前一个数据的；</br>
+  NSSet无序的集合，散列存储。存储的时候并不是需要一块连续的内存，有可能我第一个数据在这个地方，而第二个数据和第一个数据中间还隔得有其他内容，我只是在存储第二个数据的时候，随便找了个可以放下的位置就存下来了</br>
+  哈希表也叫散列表，哈希表是一种数据结构，它提供了快速的插入操作和查找操作，无论哈希表总中有多少条数据，插入和查找的时间复杂度都是为O(1)。</br>
+</div>
 - 基于cocoapods组件化编程
 
 ## Objective-C
